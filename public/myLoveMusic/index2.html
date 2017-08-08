@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>青儿我的爱</title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+        .tishi {
+            position: absolute;
+            position: fixed !important;
+            z-index: 99;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .tishiContent {
+            border: 1px solid #FFF;
+            font-size: xx-large;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <link href="./jscss/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./jscss/jquery.js"></script>
+    <script type="text/javascript" src="./jscss/garden.js"></script>
+    <script type="text/javascript" src="./jscss/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content" style="width: 1110px; height: 625px; margin-top: 52px; margin-left: 245px;">
+            <div id="loveHeart">
+
+                <div style="z-index: 999">
+                    <canvas id="garden" width="670" height="625" style="z-index:999;"></canvas>
+                </div>
+
+                <div id="words" style="position: absolute; top: 257px; left: 765px;z-index: 5">
+                    <a href="index3.html"><img id="qing" src="" style="width: 214px;z-index: -5; display: none" ></a>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div align="center" class="tishi">
+            <span class="tishiContent">轻触靓照继续</span>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        $("#qing").attr('src',base64);
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+//            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 50);
+            adjustCodePosition();
+//            $("#code").typewriter();
+        }
+    </script>
+	<!--<audio src="20140413_025646.mp3" autoplay="autoplay"></audio>-->
+
+</body></html>
