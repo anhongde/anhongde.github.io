@@ -1,0 +1,183 @@
+.tf_pattern,
+.blur
+{
+    position: fixed;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background: transparent url(../resource/img/pattern.png) repeat top left;
+}
+
+.blur
+{
+    z-index: 2;
+}
+
+.loopImg img
+{
+    width: 100%;
+}
+
+.footer
+{
+    z-index: 3;
+
+    margin-top: -20px;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    background-color: rgba(91, 118, 82, 1);
+}
+
+.clock
+{
+    position: absolute;
+    z-index: 4;
+
+    width: 80%;
+    margin: 5% 0 0 10%;
+}
+
+.clock section,
+.colon
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clock section
+{
+    width: 50%;
+}
+
+.colon
+{
+    padding-top: 45px;
+}
+
+.colon,
+.hour,
+.minute
+{
+    /*position: absolute;*/
+    font-size: 1000%;
+
+    text-align: center;
+}
+
+.hour,
+.minute
+{
+    position: absolute;
+
+    width: 20%;
+    padding: 60px 0;
+
+    border: 1px solid #696;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    background-color: rgba(50, 50, 50, .5);
+    -webkit-box-shadow: #666 0 0 10px;
+       -moz-box-shadow: #666 0 0 10px;
+            box-shadow: #666 0 0 10px;
+}
+
+.minute
+{
+    margin-left: 30%;
+}
+
+.threed
+{
+    letter-spacing: 0;
+
+    color: #fafafa;
+    text-shadow: 0 1px 0 #999,
+    0 2px 0 #888,
+    0 3px 0 #777,
+    0 4px 0 #666,
+    0 5px 0 #555,
+    0 6px 0 #444,
+    0 7px 0 #333,
+    0 8px 7px #001135;
+}
+
+
+/*.clock
+{
+    position: absolute;
+    z-index: 4;
+
+    width: 80%;
+    margin: 5% 0 0 10%;
+}
+
+.clock section,
+.colon
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clock section
+{
+    width: 500px;
+}
+
+.colon
+{
+    padding-top: 45px;
+}
+
+.colon,
+.hour,
+.minute
+{
+    
+    font-size: 1000%;
+
+    text-align: center;
+}
+
+.hour,
+.minute
+{
+    position: absolute;
+
+    width: 200px;
+    padding: 60px 0;
+
+    border: 1px solid #696;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    background-color: rgba(50, 50, 50, .5);
+    -webkit-box-shadow: #666 0 0 10px;
+       -moz-box-shadow: #666 0 0 10px;
+            box-shadow: #666 0 0 10px;
+}
+
+.minute
+{
+    margin-left: 300px;
+}
+
+.threed
+{
+    letter-spacing: 0;
+
+    color: #fafafa;
+    text-shadow: 0 1px 0 #999,
+    0 2px 0 #888,
+    0 3px 0 #777,
+    0 4px 0 #666,
+    0 5px 0 #555,
+    0 6px 0 #444,
+    0 7px 0 #333,
+    0 8px 7px #001135;
+}*/

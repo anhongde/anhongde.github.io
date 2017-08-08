@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>安瑞杰</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body style="height:100%;">
+
+	<div id="a" style="top: 0px;
+left: 0px;
+position: fixed;
+width: 100%;
+height: 100%;
+opacity: 0.35;
+z-index: 60000;
+background-color: rgb(0, 0, 0);display: none">
+		
+	</div>
+
+	<div class="login" style="position: absolute;margin: 40% 0 0 80%;z-index: 5;color: rgb(255,255,255);">
+	<form onsubmit="check();return false;">
+		<label style="display:inline-block;width: 60px;margin: 0; font-size: 25px;" for="username">账号:</label>
+		<input class="form-control" style="display:inline-block;" id="username" type="text" value="" placeholder="请输入账号" required="required" autofocus="autofocus">
+		<br/>
+		<label style="display:inline-block;width: 60px;margin: 0; font-size: 25px;" for="password">密码:</label>
+		<input class="form-control" style="display:inline-block;" id="password" type="password" value="" placeholder="请输入密码" required="required">
+		<br/>
+		<button type="submit" class="btn btn-success">登陆</button>
+		<div style="display:inline-block;width: 42px;"></div>
+		<button type="button" class="btn btn-info" onclick="">注册新账号</button>
+		<button type="button" class="btn btn-warning">忘记密码</button>
+
+		<div id="alert" class="alert alert-danger alert-dismissable" style="margin-top: 10px;display: none;">
+			<button type="button" class="close" aria-hidden="true" onclick="$(this).parent().hide();">
+			×
+			</button>
+			账号或密码错误！请重新输入。
+		</div>
+	</form>
+		
+	</div>
+
+	
+
+	<!--底层平铺-->
+	<div class="tf_pattern">	
+	</div>
+	<!--顶层平铺-->
+	<div class="blur">
+	</div>
+	<!--时钟区-->
+	<div class="clock">
+		<section>
+			<div class="hour">
+				<p class="threed">11</p>
+			</div>
+			<div class="minute">
+				<p class="threed">22</p>
+			</div>
+			<div id="colon" class="colon threed">
+				:
+			</div>
+		</section>
+		<!-- <section>
+			<div class="hour threed">
+				<p class="">11</p>
+			</div>
+			<div class="minute threed">
+				<p class="">22</p>
+			</div>
+			<div id="colon" class="colon threed">
+				:
+			</div>
+		</section> -->
+	</div>
+	<!--轮播图片区域开始-->
+ 	<div id="myCarousel" class="carousel slide">
+		<ol id="myCarouselol" class="carousel-indicators">
+		</ol>
+		<div id="myCarouseldiv" class="carousel-inner">
+		</div>
+		<!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+		<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a> -->
+	</div>
+	<!--轮播图片区域结束-->
+	<div class="footer">
+		<small>Copyright © 2015 - 2015 ARJ. All Rights Reserved.安瑞</small>
+	</div>
+
+</body>
+<script type="text/javascript">
+	//图片数组1:PC
+	var inData1 = [{
+		src:"resource/img/1920_1080/151127_1.jpg",
+		alt:"1 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_2.jpg",
+		alt:"2 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_3.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_4.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_5.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_6.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_7.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_8.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_9.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1920_1080/151127_10.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	}];
+	//图片数组2:手機
+	var inData2 = [{
+		src:"resource/img/1080x1920/1.jpg",
+		alt:"1 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1080x1920/2.jpg",
+		alt:"2 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1080x1920/3.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	},{
+		src:"resource/img/1080x1920/4.jpg",
+		alt:"3 slide",
+		clickEvn:"",
+		title:""
+	}];
+	//测试用户数据
+	var testUser = [
+		{
+			username:"test",
+			password:"123456"
+		}
+	];
+	localStorage.users = JSON.stringify(testUser);
+	//窗口宽度
+	var W_WIDTH = $(window).width();
+	//窗口長寬比
+	var W_H_RATIO = 0;
+	//圖片切換時間
+	var TIME = 3000;
+
+	//加载完成后执行
+	window.onload = function(){
+		var inData = null;
+		if(IsPC()){
+			inData = inData1;
+			W_H_RATIO = 945/1920;
+		}else{
+			inData = inData2;
+			W_H_RATIO = 695/450;
+			$(".clock").css({
+				// font-size: '800%',
+				margin: '15% 0 0 5%',
+				width: '90%'
+			});
+			$(".clock").css('font-size','80%');
+			$(".clock section").css({
+				width: '100%'
+			});			
+			$(".hour,.minute").css({
+				width: '45%'
+			});
+			$(".minute").css('margin-left','55%');
+			$(".login").css({
+				margin: '80% 0 0 10%'
+			});
+		}
+		loopPlay(inData,TIME, W_H_RATIO);
+
+		setTime();
+	}
+
+	/*
+	登陆
+	*/
+	function check(){
+		var testUser = JSON.parse(localStorage.users);
+		var flag = false;
+		for(var i in testUser){
+			if($("#username").val() == testUser[i].username && $("#password").val()  == testUser[i].password){
+				flag = true;
+				// alert("secess");
+				location.href = "chose.html";
+			}
+		}
+		if(!flag){
+			$("#alert").show().delay("2000").fadeOut("slow");
+		}
+
+		// localStorage.clear();
+		// alert($("#password").val());
+		// if(localStorage.username){
+		// 	alert(localStorage.username);
+		// }else{
+		// 	alert("wu");
+		// 	localStorage.username = "username";
+		// }
+	}
+
+	/*
+	设置时间
+	*/
+	function setTime(){
+		var time = new Date();
+		var hour = time.getHours();
+		var minute = time.getMinutes();
+		hour = hour >= 10 ? hour : "0" + hour;
+		minute = minute >= 10 ? minute : "0" + minute;
+		$(".hour .threed").html(hour);
+		$(".minute .threed").html(minute);
+		$("#colon").fadeToggle(999);
+		setTimeout("setTime()",1000);
+	}
+	
+	/*
+	添加圖片
+	*/
+	function loopPlay(loopData,time,ratio){
+		var data = loopData;
+		var olStr = '';
+		var divStr = '';		
+		for (var i in data) {
+			if(i == 0){
+				olStr += '<li data-target="#myCarousel" data-slide-to="' + i + '" class="active">';
+				divStr += '<div class="item active loopImg">'
+						+	'<img src="' + data[i].src + '" alt="' + data[i].alt + '" onclick="' + data[i].clickEvn + '">'
+						+	'<!--div class="carousel-caption" style="color:red;">' + data[i].title + '</div-->'
+						+'</div>';
+			}else{
+				olStr += '<li data-target="#myCarousel" data-slide-to="' + i + '">';
+				divStr += '<div class="item loopImg">'
+						+	'<img src="' + data[i].src + '" alt="' + data[i].alt + '" onclick="' + data[i].clickEvn + '">'
+						+	'<!div class="carousel-caption" style="color:red;">' + data[i].title + '</div-->'
+						+'</div>';
+			}
+		};
+		// document.getElementById("myCarouselol").innerHTML = olStr;
+		document.getElementById("myCarouseldiv").innerHTML = divStr;
+		$('#myCarousel').carousel({
+			interval: time
+		})
+		$('.loopImg').each(function(index, el) {
+			var height = ratio*W_WIDTH;
+			$(this).find('img').height(height);
+		});
+	}
+
+</script>
+</html>

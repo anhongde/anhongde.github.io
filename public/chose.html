@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>选择页</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body style="background-color: #505050;margin: 0;padding: 0;">
+	<div style="position: absolute;left: 35%;top: 40%;text-align: center;line-height: 30px;">
+		<div style="width: 100px;height: 30px;background-color: #f5a623;border-radius: 15px;" onclick="window.location.href = 'src/sjm/index.html'">神经猫</div>
+		<div style="width: 100px;height: 30px;background-color: #b8e986;border-radius: 15px;margin: 5px 0 0 -20px;" onclick="check()">泡泡龙</div>
+	</div>
+	
+</body>
+
+<script>
+	function check(){
+		if(IsPC()){
+			window.location.href = 'src/ppl/index.html';
+		}else{
+			alert("请在PC端打开。");
+		}	
+	}
+</script>
