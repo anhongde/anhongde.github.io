@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title>扫雷</title>
+    <style>
+        table{
+            border: 0;
+            border-left: 1px solid;
+            border-top: 1px solid;
+        }
+        td{
+            border: 0;
+            border-right: solid 1px;
+            border-bottom: solid 1px;
+            background-color: #c3c3c3;
+            text-align: center;
+        }
+        .red{
+            background-color: red;
+        }
+        .bai{
+            background-color: #ffffff;
+        }
+    </style>
+    <script src="../js/jq.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<table id="tabAir" cellpadding="0" cellspacing="0"><tr><td style="width: 100px;height: 40px;">请选择格数</td></tr></table>
+<button id="8x8" onclick="drawTab(8)">8x8</button>
+<button id="12x12" onclick="drawTab(12)">12x12</button>
+<button id="16x16" onclick="drawTab(16)">16x16</button>
+<!--<button id="re">刷新</button>-->
+</body>
+<script>
+    var lines = 8;
+    var all = 0;
+    var out = 0;
+    var live = 0.2;
+
+    function drawTab(num){
+        lines = num;
+        var tabStr = '';
+        for(var i = 0;i < num;i++){
+            var trStr = '<tr>';
+
+            for(var p = 0;p < num;p++){
+                var type = Math.random()*2;
+                var tdStr = '<td><span></span><input style="display: none" value="' + type + '"></td>';
+                trStr += tdStr;
+            };
+
+            trStr += '</tr>';
+            tabStr += trStr;
+        }
+        var tdSty = '';
+        live = live*8/num;
+        switch(num){
+            case 8:
+                tdSty = "width: 40px;height: 40px;";
+                break;
+            case 12:
+                tdSty = "width: 27px;height: 27px;";
+                break;
+            case 16:
+                tdSty = "width: 20px;height: 20px;";
+                break;
+        }
+
+        document.getElementById('tabAir').innerHTML = tabStr;
+        $("td").each(function(i,v){
+            $(this).attr("style",tdSty);
+            all += $(this).find('input').val() < live ? 1 : 0;
+
+            var open = function(_this){
+                var ls = i + 1;
+                var count = 0;
+                var check = function(){
+                    if(ls <= lines){
+
+                        if(ls == 1){
+                            count += $("td").find('input')[1].value < live ? 1 : 0;
+                            count += $("td").find('input')[lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[lines+1].value < live ? 1 : 0;
+                        }else if(ls == lines){
+                            count += $("td").find('input')[lines-2].value < live ? 1 : 0;
+                            count += $("td").find('input')[2*lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[2*lines-2].value < live ? 1 : 0;
+                        }else{
+                            count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines+1].value < live ? 1 : 0;
+                        }
+                    }else if(ls > lines * (lines - 1)){
+                        if(i == lines * (lines - 1)){
+                            count += $("td").find('input')[lines * (lines - 2)].value < live ? 1 : 0;
+                            count += $("td").find('input')[lines * (lines - 2) + 1].value < live ? 1 : 0;
+                            count += $("td").find('input')[lines * (lines - 1) + 1].value < live ? 1 : 0;
+                        }else if(ls == lines * lines){
+                            count += $("td").find('input')[lines * lines -2].value < live ? 1 : 0;
+                            count += $("td").find('input')[(lines - 1)*lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[(lines - 1)*lines-2].value < live ? 1 : 0;
+                        }else{
+                            count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines+1].value < live ? 1 : 0;
+                        }
+                    }else{
+                        if(i%lines == 0){
+                            count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines+1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines+1].value < live ? 1 : 0;
+                        }else if(ls%lines == 0){
+                            count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines-1].value < live ? 1 : 0;
+                        }else{
+                            count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i-lines+1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines-1].value < live ? 1 : 0;
+                            count += $("td").find('input')[i+lines+1].value < live ? 1 : 0;
+                        }
+                    }
+                };
+                check();
+                if($(_this).find('input').val() < live){
+                    $(_this).addClass('red');
+                    $(_this).find('span').text('雷');
+                    alert("被炸到，游戏结束。");
+                    $("td").each(function(i,v){
+                        if($(this).find('input').val() < live){
+                            $(this).addClass('red');
+                            $(this).find('span').text('雷');
+                            $("td").unbind();
+                        }else{
+                            var ls = i + 1;
+                            var count = 0;
+                            var check = function(){
+                                if(ls <= lines){
+
+                                    if(ls == 1){
+                                        count += $("td").find('input')[1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[lines+1].value < live ? 1 : 0;
+                                    }else if(ls == lines){
+                                        count += $("td").find('input')[lines-2].value < live ? 1 : 0;
+                                        count += $("td").find('input')[2*lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[2*lines-2].value < live ? 1 : 0;
+                                    }else{
+                                        count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines+1].value < live ? 1 : 0;
+                                    }
+                                }else if(ls > lines * (lines - 1)){
+                                    if(i == lines * (lines - 1)){
+                                        count += $("td").find('input')[lines * (lines - 2)].value < live ? 1 : 0;
+                                        count += $("td").find('input')[lines * (lines - 2) + 1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[lines * (lines - 1) + 1].value < live ? 1 : 0;
+                                    }else if(ls == lines * lines){
+                                        count += $("td").find('input')[lines * lines -2].value < live ? 1 : 0;
+                                        count += $("td").find('input')[(lines - 1)*lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[(lines - 1)*lines-2].value < live ? 1 : 0;
+                                    }else{
+                                        count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines+1].value < live ? 1 : 0;
+                                    }
+                                }else{
+                                    if(i%lines == 0){
+                                        count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines+1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines+1].value < live ? 1 : 0;
+                                    }else if(ls%lines == 0){
+                                        count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines-1].value < live ? 1 : 0;
+                                    }else{
+                                        count += $("td").find('input')[i-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i-lines+1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines-1].value < live ? 1 : 0;
+                                        count += $("td").find('input')[i+lines+1].value < live ? 1 : 0;
+                                    }
+                                }
+                            };
+                            check();
+                            $(this).addClass('bai');
+                            $(this).find('span').text(count);
+                        }
+                    });
+                }else{
+                    if($(_this).find('span').text() == '' || $(_this).find('span').text() == '!' || $(_this).find('span').text() == '?'){
+                        out += 1;
+                    }
+                    $(_this).addClass('bai');
+                    $(_this).find('span').text(count);
+                    if(out + all == lines * lines){
+                        alert("确定所有雷，你赢了！");
+                    }
+                }
+            };
+            $(this).click(function(){
+                var pv = $(this).find('span');
+                if(pv.text() == ''){
+                    pv.text('?');
+                }else if(pv.text() == '?'){
+//                    pv.text('!');
+//                }else if(pv.text() == '!'){
+                    pv.text('');
+                    open(this);
+                }
+            });
+        });
+    }
+
+</script>
+</html>
