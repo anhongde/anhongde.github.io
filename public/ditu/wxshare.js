@@ -7,7 +7,7 @@
 				title  = htmlDecode($('title').text()),	// htmlDecode($('#txt-wx').data('title')),
 				desc   = htmlDecode($('title').text() + "，敬请访问！"),	//<br/>官网地址：" + window.location.href),	// htmlDecode($('#txt-wx').data('desc')),
 				desc = desc || link,
-				imgUrl = "";
+				imgUrl = "https://anhongde.github.io/public/ditu/52c6c9914b20325519.jpg";
 			
 			
 			var url=window.location.href;
