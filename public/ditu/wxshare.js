@@ -3,17 +3,11 @@
         	WeixinJSBridge.call("hideToolbar");
         	
 			var appId  = "",	//$('#txt-wx').data('appid'),
-				link   = '111',	//$('#txt-wx').data('link'),
-				title  = '111',	// htmlDecode($('#txt-wx').data('title')),
-				desc   = htmlDecode($('title').text() + "，敬请访问！"),	//<br/>官网地址：" + window.location.href),	// htmlDecode($('#txt-wx').data('desc')),
-				desc = desc || link,
-				imgUrl = "https://anhongde.github.io/public/ditu/52c6c9914b20325519.jpg";/*
-			var appId  = "",	//$('#txt-wx').data('appid'),
 				link   = window.location.href,	//$('#txt-wx').data('link'),
 				title  = htmlDecode($('title').text()),	// htmlDecode($('#txt-wx').data('title')),
 				desc   = htmlDecode($('title').text() + "，敬请访问！"),	//<br/>官网地址：" + window.location.href),	// htmlDecode($('#txt-wx').data('desc')),
 				desc = desc || link,
-				imgUrl = "https://anhongde.github.io/public/ditu/52c6c9914b20325519.jpg";*/
+				imgUrl = "";
 			
 			
 			var url=window.location.href;
