@@ -592,7 +592,6 @@ body {
   text-align: center;
   font-weight: bolder;
   width: 100%;
-  display: none;
 }
 #mainDiv header span:nth-child(1) {
   color: #228DFF;

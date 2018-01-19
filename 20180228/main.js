@@ -27,10 +27,10 @@ function init(){
             },500);
         },500);
     },300);*/
-    $('#mainDiv header ').fadeIn(1500);
-    setTimeout(function(){
-        $('#mainDiv header span').addClass('hover');
-    },500);
+    //$('#mainDiv header ').fadeIn(1500);
+    //setTimeout(function(){
+    //    $('#mainDiv header span').addClass('hover');
+    //},500);
 }
 
 //重置函数
