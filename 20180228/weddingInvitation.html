@@ -13,20 +13,27 @@
     <script type="text/javascript" src="garden.js"></script>
     <script type="text/javascript" src="functions.js"></script>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="base64.js"></script>
 </head>
 <body>
 <div id="mainDiv">
     <div id="content" style="width: 100%;height: 32em ;">
         <header>
-            <span class="">安瑞</span><span>&nbsp;&nbsp;&&nbsp;&nbsp;</span><span>周亚青</span>
+            <span class="shadow">安瑞</span><span class="shadow">&nbsp;&nbsp;&&nbsp;&nbsp;</span><span class="shadow">周亚青</span>
+            <!--<span class="hover">安瑞</span><span>&nbsp;&nbsp;&&nbsp;&nbsp;</span><span>周亚青</span>-->
+            <p>婚礼邀请</p>
         </header>
         <div id="loveHeart">
+            <div id="words" style="position: absolute; display: none">
+                <a href="index3.html"><img id="qing" src="" ></a>
+            </div>
+            <div id="words1" style="position: absolute; display: none">
+                <a href="index3.html"><img id="qing1" src="" ></a>
+            </div>
             <div style="z-index: 999">
                 <canvas id="garden" style="margin-top: 8em;"></canvas>
             </div>
-           <!-- <div id="words" style="position: absolute; top: 257px; left: 10em;z-index: 5">
-                <a href="index3.html"><img id="qing" src="" style="width: 8.5em;z-index: -5; display: none" ></a>
-            </div>-->
+
 
         </div>
     </div>
@@ -37,7 +44,8 @@
 <script type="text/javascript">
     var offsetX = $("#loveHeart").width() / 2;
     var offsetY = $("#loveHeart").height() / 2 - 55;
-    $("#qing").attr('src',base64);
+    $("#qing").attr('src',base64imgs[1]);
+    $("#qing1").attr('src',base64imgs[2]);
 
     if (!document.createElement('canvas').getContext) {
         var msg = document.createElement("div");
@@ -50,7 +58,7 @@
         document.execCommand("stop");
     } else {
         setTimeout(function () {
-//            adjustWordsPosition();
+            adjustWordsPosition();
             startHeartAnimation();
         }, 50);
         adjustCodePosition();
