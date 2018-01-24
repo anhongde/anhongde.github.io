@@ -4,7 +4,10 @@
 
 /*页面加载函数*/
 $(function(){
-    init();
+    $('.cover button').click(function(){
+        $('.cover').hide();
+        init();
+    });
 });
 
 function init(){
@@ -28,7 +31,30 @@ function init(){
         },500);
     },300);*/
     $('#mainDiv header ').fadeIn(1500);
-    //setTimeout(function(){
+    setInterval(function(){garden.render()},Garden.options.growSpeed);
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            adjustWordsPosition();
+            startHeartAnimation();
+        }, 50);
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+
+    inputName = $('.cover input').val();
+    //console.log(inputName);
+
+
+//setTimeout(function(){
     //    $('#mainDiv header span').addClass('hover');
     //},500);
 }

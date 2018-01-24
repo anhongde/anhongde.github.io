@@ -16,54 +16,73 @@
     <script type="text/javascript" src="base64.js"></script>
 </head>
 <body>
-<div id="mainDiv">
-    <div id="content" style="width: 100%;height: 32em ;">
-        <header>
-            <span class="shadow">安瑞</span><span class="shadow">&nbsp;&nbsp;&&nbsp;&nbsp;</span><span class="shadow">周亚青</span>
-            <!--<span class="hover">安瑞</span><span>&nbsp;&nbsp;&&nbsp;&nbsp;</span><span>周亚青</span>-->
-            <p>婚礼邀请</p>
-        </header>
-        <div id="loveHeart">
-            <div id="words" style="position: absolute; display: none">
-                <a href="index3.html"><img id="qing" src="" ></a>
-            </div>
-            <div id="words1" style="position: absolute; display: none">
-                <a href="index3.html"><img id="qing1" src="" ></a>
-            </div>
-            <div style="z-index: 999">
-                <canvas id="garden" style="margin-top: 8em;"></canvas>
-            </div>
-
-
+    <div class="cover">
+        <div>
+            <p>温馨提示：</p>
+            <p>接下来需要加载多张图片</p>
+            <p>建议Wifi环境下浏览</p>
         </div>
+        <input type="text" placeholder="请输入您的姓名或新人对您的称呼">
+        <button>继续</button>
     </div>
-    <!--<div align="center" class="tishi">-->
-        <!--<span class="tishiContent">轻触靓照继续</span>-->
-    <!--</div>-->
-</div>
-<script type="text/javascript">
-    var offsetX = $("#loveHeart").width() / 2;
-    var offsetY = $("#loveHeart").height() / 2 - 55;
-    $("#qing").attr('src',base64imgs[1]);
-    $("#qing1").attr('src',base64imgs[2]);
+    <div id="mainDiv">
+        <div id="content" style="width: 100%;height: 32em ;">
+            <header>
+                <span class="shadow">安瑞</span><span class="shadow">&nbsp;&nbsp;&&nbsp;&nbsp;</span><span class="shadow">周亚青</span>
+                <!--<span class="hover">安瑞</span><span>&nbsp;&nbsp;&&nbsp;&nbsp;</span><span>周亚青</span>-->
+                <p>婚礼邀请</p>
+            </header>
+            <div id="loveHeart">
+                <div class="imgBox">
+                    <div style="margin-left: -10px">
+                        <div id="words" style="position: absolute; display: none">
+                            <a href="index3.html"><img id="qing" src="" ></a>
+                        </div>
+                        <div id="words1" style="position: absolute; display: none">
+                            <a href="index3.html"><img id="qing1" src="" ></a>
+                        </div>
+                    </div>
+                </div>
 
-    if (!document.createElement('canvas').getContext) {
-        var msg = document.createElement("div");
-        msg.id = "errorMsg";
-        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-        document.body.appendChild(msg);
-            $("#code").css("display", "none")
-        $("#copyright").css("position", "absolute");
-        $("#copyright").css("bottom", "10px");
-        document.execCommand("stop");
-    } else {
-        setTimeout(function () {
-            adjustWordsPosition();
-            startHeartAnimation();
-        }, 50);
-        adjustCodePosition();
-            $("#code").typewriter();
-    }
-</script>
+                <div style="z-index: 999">
+                    <canvas id="garden" style="margin-top: 8em;"></canvas>
+                </div>
+
+            </div>
+            <div class="info">
+                <p>尊敬的<span id="inputName">朋友</span>：</p>
+                <p>我们就要结婚啦！</p>
+                <p>在此恭请您的出席，为我们见证！</p>
+            </div>
+        </div>
+        <!--<div align="center" class="tishi">-->
+            <!--<span class="tishiContent">轻触靓照继续</span>-->
+        <!--</div>-->
+    </div>
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        $("#qing").attr('src',base64imgs[1]);
+        $("#qing1").attr('src',base64imgs[2]);
+        var inputName = '';
+
+        /*if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+            document.body.appendChild(msg);
+                $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 50);
+            adjustCodePosition();
+                $("#code").typewriter();
+        }*/
+    </script>
 </body>
 </html>
