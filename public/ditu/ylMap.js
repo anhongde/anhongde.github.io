@@ -131,6 +131,7 @@ ylmap.init = function(){
 	handleSuccess = function(position){
 		// 获取到当前位置经纬度 
 		var coords = position.coords;
+		alert(JSON.stringify(position));
 		var lat = coords.latitude;
 		var lng = coords.longitude;
 		location_point = new BMap.Point(lng,lat);
