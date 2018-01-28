@@ -4,13 +4,17 @@
 
 /*页面加载函数*/
 $(function(){
+    //init();
+
     $('.cover button').click(function(){
         $('.cover').hide();
-        init();
+        init1();
+
     });
 });
 
 function init(){
+    statusNow = '#mainDiv';
     //第一页头文字显示
     /*setTimeout(function(){
         $('#mainDiv header span').eq(0).fadeIn(500);
@@ -31,6 +35,7 @@ function init(){
         },500);
     },300);*/
     $('#mainDiv header ').fadeIn(1500);
+    $('#mainDiv .info ').fadeIn(4500);
     setInterval(function(){garden.render()},Garden.options.growSpeed);
     if (!document.createElement('canvas').getContext) {
         var msg = document.createElement("div");
@@ -50,13 +55,50 @@ function init(){
         $("#code").typewriter();
     }
 
-    inputName = $('.cover input').val();
+    inputName = $('.cover input').val() != ''? $('.cover input').val():'朋友';
+    $('#inputName').html(inputName);
     //console.log(inputName);
 
 
 //setTimeout(function(){
     //    $('#mainDiv header span').addClass('hover');
     //},500);
+}
+
+function init1(){
+    statusNow = '.page1';
+    $('.page1').eq(0).fadeIn(2500);
+    $('.u-arrow').show();
+    $('.page1 img').eq(2).animate({
+        width: "6em",
+        right: "6em",
+        bottom: 0
+    }, 2000 );
+    $('.page1 img').eq(3).animate({
+        width: "4em",
+        right: "7em",
+        bottom: 0
+    }, 2000 );
+    $('.page1 img').eq(4).animate({
+        width: "7em",
+        right: "4em",
+        bottom: 0
+    }, 2000 );
+    $('.page1 img').eq(5).animate({
+        width: "9em",
+        right: "0em",
+        bottom: 0
+    }, 2000 );
+    $('.page1 img').eq(6).animate({
+        width: "8em",
+        right: "0em",
+        bottom: 0
+    }, 2000 );
+
+    //开启事件绑定滑动
+    setTimeout( function(){changeOpen();},2600);
+
+
 }
 
 //重置函数
