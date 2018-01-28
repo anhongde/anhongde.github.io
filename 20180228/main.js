@@ -8,6 +8,7 @@ $(function(){
 
     $('.cover button').click(function(){
         $('.cover').hide();
+        $('#musicaudio')[0].play();
         init1();
 
     });
@@ -67,6 +68,23 @@ function init(){
 
 function init1(){
     statusNow = '.page1';
+    inputName = $('.cover input').val() != ''? $('.cover input').val():'朋友';
+    $('.audio_btn').show();
+
+    $('.audio_btn').click(function(){
+        if($('.audio_btn').hasClass('play')){
+            $('.audio_btn').removeClass('play');
+            $('.audio_btn img').attr("src",'img/musicoff.png');
+            $('#musicaudio')[0].pause();
+        }else {
+            $('.audio_btn').addClass('play');
+            $('.audio_btn img').attr("src",'img/musicon.png');
+            $('#musicaudio')[0].play();
+        }
+    });
+
+
+    $('#inputName').html(inputName);
     $('.page1').eq(0).fadeIn(2500);
     $('.u-arrow').show();
     $('.page1 img').eq(2).animate({
@@ -96,7 +114,7 @@ function init1(){
     }, 2000 );
 
     //开启事件绑定滑动
-    setTimeout( function(){changeOpen();},2600);
+    setTimeout( function(){changeOpen();},1000);
 
 
 }

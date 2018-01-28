@@ -16,6 +16,7 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="base64.js"></script>
     <script type="text/javascript" src="yl3d.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"></script>
 </head>
 <body>
     <!--<div class="cover" style="display: none">-->
@@ -105,31 +106,81 @@
         <!--</div>-->
     </div>
     <div class="page2 mpage" style="background-color: white;display: none">
-        <div class="bak"></div>
-        <img class="" src="img/D30A3364.jpg">
+        <div class="bak" style="margin-top: 0"></div>
+        <div style="    margin-left: auto;
+    width: 95%;
+    margin-right: auto;">
+            <img style="width: 95%;   max-height: 20em; margin-top:8em;" src="img/D30A3364.jpg">
+        </div>
+
+        <div style="    width: 100%;
+    text-align: center;">
+            <img src="img/xz.png" style="    width: 4em;
+    margin-left: -2em;
+    margin-top: 1em;">
+            <img src="img/lan.png" style="    width: 20em;
+    margin-left: -10em;
+    margin-top: 6em;">
+            <img src="img/lan.png" style="    width: 20em;
+    margin-left: -10em;
+    margin-top: 28.5em;" class="trans180">
+        </div>
+
         <img class="h_100" src="img/lp.gif">
         <div class="words">
-            青青子衿，悠悠我心，但为君故，倍加幸福
+            <p>尊敬的<span id="inputName">朋友</span>：</p>
+            <p>我们就要结婚啦！</p>
+            <p>在此恭请您的出席，为我们见证！</p>
+            <p>2018年2月28日（周<span>三</span>）</p>
+            <p>农历 戊戌狗年正月<span>十三</span></p>
+            <p>典礼时间：早<span>5点~7点</span></p>
+            <p>典礼地点：河北省沧州市青县曹寺镇汤庄子村</p>
         </div>
 
     </div>
 
-
-    <div class="page1 mpage" style="background-color: white;display: none">
-        <img src="img/yqh_2.png"><br>5
-        <img src="img/yqh_1.png">
-        <img src="img/hh1.png" class="imgHide">
-        <img src="img/hh2.png"  class="imgHide">
-        <img src="img/hh3.png"  class="imgHide">
-        <img src="img/hh4.png"  class="imgHide">
-        <img src="img/hh5.png"  class="imgHide">
-        <div class="bak"></div>
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <img class="h_100" src="img/zong1.jpg">
+        <img class="h_100" src="img/lp.gif">
+        <div class="text" style="left: 0.5em;
+    top: 1em;">
+            青青子衿，悠悠我心，但为君故，倍加幸福!
+        </div>
     </div>
 
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <img class="h_100" src="img/zong2.jpg">
+        <img class="h_100" src="img/lp.gif">
+        <div class="text" style="left: 0.5em;
+    top: 1em;">
+            平安康泰，一生所爱，瑞意祥和，同心同德!
+        </div>
+    </div>
 
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <div class="bak" style="margin-top: 0"></div>
+        <div id="allmap"></div>
+        <div style="position: absolute;
+    bottom: 2.5em;
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;color: #9e3b14;font-family: bansong;">
+            继续上划返回首页
+        </div>
+        <div  class="share" style="margin-top:0em;    position: absolute;">
+            <img src="img/pyq.png"><p >分享</p>
 
+        </div>
+    </div>
+
+    <audio id="musicaudio" src="bjwy.mp3" autoplay="autoplay" loop="loop" >
+        您的浏览器不支持 audio 标签。
+    </audio>
+    <div class="audio_btn play" style="display: none"><img src="img/musicon.png"></div>
     <section class="u-arrow"><img src="img/btn01_arrow.png"></section>
-
+    <section class="weixin-share" onclick="cancle_share_weixin(this);">
+        <img src="img/guide.png">
+    </section>
 
     <script type="text/javascript">
         var offsetX = $("#loveHeart").width() / 2;
@@ -210,6 +261,9 @@
             $(".mpage").on('mousedown touchstart',page_touchstart);
             $(".mpage").on('mousemove touchmove',page_touchmove);
             $(".mpage").on('mouseup touchend mouseout',page_touchend);
+            $(".u-arrow").on('mousedown touchstart',page_touchstart);
+            $(".u-arrow").on('mousemove touchmove',page_touchmove);
+            $(".u-arrow").on('mouseup touchend mouseout',page_touchend);
 
         };
 
@@ -347,6 +401,7 @@
         /*
          ** 切换成功的函数
          */
+        var hasInitMap = false;
         function success(){
             /*
              ** 切换成功回调的函数
@@ -355,9 +410,37 @@
             $(".mpage").eq(page_n-1).removeClass("show active").addClass("hide");
             $(".mpage").eq(newM-1).removeClass("active hide").addClass("show");
 
-//            if(newM-1 == 1){
-//                init();
-//            }
+            $('.text').hide();
+            $('.words').hide();
+            $(".mpage").eq(newM-1).find('.text').fadeIn(4500);
+            $(".mpage").eq(newM-1).find('.words').fadeIn(4500);
+            if(newM-1 == 6 && !hasInitMap){
+                hasInitMap = true;
+                theMap();
+
+                setTimeout(function(){
+                    $('.share').click(function(){
+                        $(".mpage").off('mousedown touchstart');
+                        $(".mpage").off('mousemove touchmove');
+                        $(".mpage").off('mouseup touchend mouseout');
+
+                        var u = navigator.userAgent; // 客户端环境信息
+                        if(u.indexOf('MicroMessenger')>-1){
+                            $('.weixin-share').css('display','block');
+                            //禁止滚动
+                            $(document.body).css('overflow','hidden');
+                            $(document.body).on('touchmove',function(e){e.preventDefault();});
+                        }else{
+                            $(this).next().addClass('open');
+                            $(this).next().css('z-index',1);
+                            $(this).next().children().addClass('open');
+                        }
+                    });
+                },200);
+
+
+
+            }
 
             // 滑动成功加载多面的图片
 //            lazy_bigP();
@@ -381,27 +464,27 @@
 //                $('.u-arrow').show();
             }
 
-            //地图重置
-            if($(".mpage").eq(page_n-1).find(".ylMap").length>0&&!mapS){
-                if(!mapS) mapS = new ylmap.init;
-            }
+//            //地图重置
+//            if($(".mpage").eq(page_n-1).find(".ylMap").length>0&&!mapS){
+//                if(!mapS) mapS = new ylmap.init;
+//            }
 
-            //txt富文本自适应伸缩
-            if($(".mpage").eq(page_n-1).find('.m-txt').length>0) txtExtand();
-
-            //页面切换视频播放停止
-            if($('.m-video').find("video")[0]!=undefined){
-                $('.m-video').find("video")[0].pause();
-                $('.video-warp').show();
-            };
+//            //txt富文本自适应伸缩
+//            if($(".mpage").eq(page_n-1).find('.m-txt').length>0) txtExtand();
+//
+//            //页面切换视频播放停止
+//            if($('.m-video').find("video")[0]!=undefined){
+//                $('.m-video').find("video")[0].pause();
+//                $('.video-warp').show();
+//            };
 
             //文本缩回
-            $(".m-txt").removeClass("open");
-            $('.m-txt').each(function(){
-                if($(this).attr('data-self')!=''){
-                    $(this).css('height',$(this).attr('data-self'));
-                }
-            })
+//            $(".m-txt").removeClass("open");
+//            $('.m-txt').each(function(){
+//                if($(this).attr('data-self')!=''){
+//                    $(this).css('height',$(this).attr('data-self'));
+//                }
+//            })
         }
 
 
@@ -422,6 +505,122 @@
          adjustCodePosition();
          $("#code").typewriter();
          }*/
+
+
+        /*地图相关*/
+
+        function theMap(){
+            var map = new BMap.Map("allmap");
+            var point = new BMap.Point(116.74347,38.595);
+            map.centerAndZoom(point, 12);
+            map.enableScrollWheelZoom();
+
+            var myIcon = new BMap.Icon("img/dwpng.png",new BMap.Size(30,30),{
+                anchor: new BMap.Size(10,10)
+            });
+
+            var marker=new BMap.Marker(point,{icon: myIcon});
+            map.addOverlay(marker);
+
+            function daohang(){
+                var geolocation = new BMap.Geolocation();
+                geolocation.getCurrentPosition(function(r){
+                    if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                        var mk = new BMap.Marker(r.point);
+                        map.addOverlay(mk);
+                        //map.panTo(r.point);//地图中心点移到当前位置
+                        var latCurrent = r.point.lat;
+                        var lngCurrent = r.point.lng;
+                        //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
+
+                        location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.595,116.74347&mode=driving&region=北京&output=html";
+
+                    }
+                    else {
+                        alert('failed'+this.getStatus());
+                    }
+                },{enableHighAccuracy: true});
+            }
+
+            map.addOverlay(marker);
+            var licontent="<b>安瑞家</b><br>";
+            licontent+="<span><strong>地址：</strong>河北省沧州市青县曹寺镇汤庄子</span><br>";
+            licontent+="<span><strong>电话：</strong><a href='tel:15805909040'>15805909040</a></span>&nbsp;&nbsp;&nbsp;";
+            licontent+="<button onclick='daohang()'>导航</button>";
+            var opts = {
+                width : 200,
+                height: 80,
+            };
+            var  infoWindow = new BMap.InfoWindow(licontent, opts);
+            var label = new BMap.Label('安瑞家',{"offset":new BMap.Size(22,3)});
+            marker.setLabel(label);
+            marker.openInfoWindow(infoWindow);
+            marker.addEventListener('click',function(){
+                marker.openInfoWindow(infoWindow);
+            });
+
+
+            /*map 1*/
+
+            var point1 = new BMap.Point(116.753354,38.502983);
+            var marker1=new BMap.Marker(point1,{icon: myIcon});
+            map.addOverlay(marker1);
+            function daohang1(){
+                var geolocation = new BMap.Geolocation();
+                geolocation.getCurrentPosition(function(r){
+                    if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                        var mk = new BMap.Marker(r.point);
+                        map.addOverlay(mk);
+                        //map.panTo(r.point);//地图中心点移到当前位置
+                        var latCurrent = r.point.lat;
+                        var lngCurrent = r.point.lng;
+                        //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
+
+                        location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.502983,116.753354&mode=driving&region=北京&output=html";
+
+                    }
+                    else {
+                        alert('failed'+this.getStatus());
+                    }
+                },{enableHighAccuracy: true});
+            }
+            map.addOverlay(marker1);
+            var licontent1="<b>周亚青家</b><br>";
+            licontent1+="<span><strong>地址：</strong>河北省沧州市青县木门店镇蔡村</span><br>";
+            licontent1+="<span><strong>电话：</strong><a href='tel:15805909040'>13051701678</a></span>&nbsp;&nbsp;&nbsp;";
+            licontent1+="<button onclick='daohang1()'>导航</button>";
+            var opts1 = {
+                width : 200,
+                height: 80,
+            };
+            var  infoWindow1 = new BMap.InfoWindow(licontent1, opts1);
+            var label1 = new BMap.Label('周亚青家',{"offset":new BMap.Size(22,3)});
+            marker1.setLabel(label1);
+            marker1.openInfoWindow(infoWindow1);
+            marker1.addEventListener('click',function(){
+                marker1.openInfoWindow(infoWindow1);
+            });
+
+
+
+
+        }
+
+
+        /**
+         * 关闭微信分享
+         */
+        function cancle_share_weixin(obj){
+            $(obj).css('display','none');
+            //还原滚动条
+            $(document.body).css('overflow','auto');
+            $(document.body).off('touchmove');
+
+            $(".mpage").on('mousedown touchstart',page_touchstart);
+            $(".mpage").on('mousemove touchmove',page_touchmove);
+            $(".mpage").on('mouseup touchend mouseout',page_touchend);
+        }
+
     </script>
 
 </body>

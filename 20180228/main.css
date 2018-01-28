@@ -671,7 +671,7 @@ a {
 /*字体*/
 @font-face {
   font-family: bansong;
-  src: url("http://res.yaoyue365.com/sys/fonts/HQ1u5Bjx.ttf");
+  src: url("img/HQ1u5Bjx.ttf");
 }
 /*各种样式*/
 body {
@@ -682,6 +682,45 @@ body {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+}
+body .audio_btn {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  z-index: 99999;
+}
+body .audio_btn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .audio_btn.play {
+  animation: play 1.5s linear both infinite;
+  -webkit-animation: play 1.5s linear both infinite;
+}
+@-webkit-keyframes play {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+body .trans180 {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -webkit-transform: rotate(180deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(180deg);
+  /* Opera */
 }
 body .h_100 {
   height: 100%;
@@ -809,6 +848,36 @@ body .page2 .text {
   left: 4em;
   top: 9em;
   line-height: 1.3em;
+  display: none;
+}
+body .page2 .words {
+  font-family: bansong;
+  position: absolute;
+  color: #9e3b14;
+  font-size: 1.5em;
+  top: 19.5em;
+  left: 2em;
+  display: none;
+}
+body .page2 .words span {
+  font-weight: bold;
+}
+body .page2 .share {
+  bottom: 0em;
+  position: absolute;
+  height: 6em;
+  right: 2em;
+}
+body .page2 .share img {
+  width: 2.5em;
+}
+body .page2 .share p {
+  font-family: bansong;
+  margin-left: 1.6em;
+  color: #228DFF;
+  /* width: 1.5em; */
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 body .textImg {
   width: 3em;
@@ -920,4 +989,39 @@ body .textImg {
   width: 17em;
   z-index: -5;
   margin-left: -3.2em;
+}
+/*地图相关*/
+#allmap {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  margin: 0;
+  font-family: "微软雅黑";
+}
+#allmap button {
+  border: 1px solid #5c9adf;
+  box-shadow: 0 0 3px 0 #5c9adf;
+  padding: 2px 10px;
+}
+#allmap label {
+  border: 1px solid #5c9adf !important;
+  box-shadow: 0 0 3px 0 #5c9adf;
+}
+/**微信分享****/
+.weixin-share {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.weixin-share img {
+  height: auto;
+  width: 60%;
+  position: absolute;
+  right: 20px;
+  top: 10px;
 }
