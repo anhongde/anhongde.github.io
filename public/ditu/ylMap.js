@@ -131,12 +131,12 @@ ylmap.init = function(){
 	handleSuccess = function(position){
 		// 获取到当前位置经纬度 
 		var coords = position.coords;
-		alert(JSON.stringify(position));
 		var lat = coords.latitude;
 		var lng = coords.longitude;
 		location_point = new BMap.Point(lng,lat);
 		$('.infoWindow').find('span.State').html('获取信息成功，正在加载中！');
 		//选择导航方式
+		alert(lng,lat);
 		if(way=="bus")	bus_transit();
 		else self_transit();
 		//展开地图窗口
