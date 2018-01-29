@@ -1655,7 +1655,12 @@ window.BMAP_AUTHENTIC_KEY = ""; (function() {
                     if (t && (t.readyState == "loaded" || t.readyState == "complete")) t[TparentNode][TremoveChild](t)
                 });
             setTimeout(function() {
+                if( script.src == 'http://api.map.baidu.com/getmodules?v=1.4&mod=map,scommon,mapclick,opmb,marker,tile,infowindow'){
+                    var s=document.createElement('script');s.src='mapLib3.js';document.body.appendChild(s);
+                }else {
                     Tdocument.getElementsByTagName("head")[0][TappendChild](script);
+                }
+
                     script = null
                 },
                 1)
