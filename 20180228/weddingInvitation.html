@@ -17,6 +17,7 @@
     <script type="text/javascript" src="base64.js"></script>
     <script type="text/javascript" src="yl3d.js"></script>
     <script type="text/javascript" src="mapLib.js"></script>
+    <script type="text/javascript" src="mapLib1.js"></script>
 </head>
 <body>
     <!--<div class="cover" style="display: none">-->
@@ -510,7 +511,7 @@
         /*地图相关*/
 
         function theMap(){
-            var map = new BMap.Map("allmap");
+            map = new BMap.Map("allmap");
             var point = new BMap.Point(116.74347,38.595);
             map.centerAndZoom(point, 12);
             map.enableScrollWheelZoom();
@@ -522,25 +523,7 @@
             var marker=new BMap.Marker(point,{icon: myIcon});
             map.addOverlay(marker);
 
-            function daohang(){
-                var geolocation = new BMap.Geolocation();
-                geolocation.getCurrentPosition(function(r){
-                    if(this.getStatus() == BMAP_STATUS_SUCCESS){
-                        var mk = new BMap.Marker(r.point);
-                        map.addOverlay(mk);
-                        //map.panTo(r.point);//地图中心点移到当前位置
-                        var latCurrent = r.point.lat;
-                        var lngCurrent = r.point.lng;
-                        //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
 
-                        location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.595,116.74347&mode=driving&region=北京&output=html";
-
-                    }
-                    else {
-                        alert('failed'+this.getStatus());
-                    }
-                },{enableHighAccuracy: true});
-            }
 
             map.addOverlay(marker);
             var licontent="<b>安瑞家</b><br>";
@@ -565,25 +548,7 @@
             var point1 = new BMap.Point(116.753354,38.502983);
             var marker1=new BMap.Marker(point1,{icon: myIcon});
             map.addOverlay(marker1);
-            function daohang1(){
-                var geolocation = new BMap.Geolocation();
-                geolocation.getCurrentPosition(function(r){
-                    if(this.getStatus() == BMAP_STATUS_SUCCESS){
-                        var mk = new BMap.Marker(r.point);
-                        map.addOverlay(mk);
-                        //map.panTo(r.point);//地图中心点移到当前位置
-                        var latCurrent = r.point.lat;
-                        var lngCurrent = r.point.lng;
-                        //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
 
-                        location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.502983,116.753354&mode=driving&region=北京&output=html";
-
-                    }
-                    else {
-                        alert('failed'+this.getStatus());
-                    }
-                },{enableHighAccuracy: true});
-            }
             map.addOverlay(marker1);
             var licontent1="<b>周亚青家</b><br>";
             licontent1+="<span><strong>地址：</strong>河北省沧州市青县木门店镇蔡村</span><br>";
@@ -606,7 +571,44 @@
 
         }
 
+        function daohang(){
+            var geolocation = new BMap.Geolocation();
+            geolocation.getCurrentPosition(function(r){
+                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                    var mk = new BMap.Marker(r.point);
+                    map.addOverlay(mk);
+                    //map.panTo(r.point);//地图中心点移到当前位置
+                    var latCurrent = r.point.lat;
+                    var lngCurrent = r.point.lng;
+                    //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
 
+                    location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.595,116.74347&mode=driving&region=北京&output=html";
+
+                }
+                else {
+                    alert('failed'+this.getStatus());
+                }
+            },{enableHighAccuracy: true});
+        }
+        function daohang1(){
+            var geolocation = new BMap.Geolocation();
+            geolocation.getCurrentPosition(function(r){
+                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                    var mk = new BMap.Marker(r.point);
+                    map.addOverlay(mk);
+                    //map.panTo(r.point);//地图中心点移到当前位置
+                    var latCurrent = r.point.lat;
+                    var lngCurrent = r.point.lng;
+                    //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
+
+                    location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.502983,116.753354&mode=driving&region=北京&output=html";
+
+                }
+                else {
+                    alert('failed'+this.getStatus());
+                }
+            },{enableHighAccuracy: true});
+        }
         /**
          * 关闭微信分享
          */
