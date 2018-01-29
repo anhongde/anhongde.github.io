@@ -309,8 +309,9 @@ ylmap.init = function(){
 	
 	function loadfunction() {  
 		/*加载百度地图API*/
-		var script = document.createElement("script");  
-		script.src = "http://api.map.baidu.com/api?v=1.4&callback=mapInit";
+		var script = document.createElement("script");
+		//script.src = "http://api.map.baidu.com/api?v=1.4&callback=mapInit";
+		script.src = "mapLib.js";
 		document.head.appendChild(script);
 
 		/*加载百度地图样式--插件样式*/
