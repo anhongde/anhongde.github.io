@@ -2611,8 +2611,8 @@ window.BMAP_AUTHENTIC_KEY = "wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"; (function() {
         setTimeout(function() {
             if(d.src == 'http://api0.map.bdimg.com/getmodules?v=2.0&t=20140707&mod=copyrightctrl_0wvo4s'){
                 d.src = 'mapLib1.js';
-            }else {
-
+            }else if(d.src == 'http://api0.map.bdimg.com/getmodules?v=2.0&t=20140707&mod=othersearch_wy5iwg'){
+                d.src = 'mapLib2.js';
             }
                 document.getElementsByTagName("head")[0].appendChild(d);
                 d = p
