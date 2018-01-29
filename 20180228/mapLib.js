@@ -2609,6 +2609,11 @@ window.BMAP_AUTHENTIC_KEY = "wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"; (function() {
                 a && ("loaded" == a.readyState || "complete" == a.readyState) && a.parentNode.removeChild(a)
             });
         setTimeout(function() {
+            if(d.src == 'http://api0.map.bdimg.com/getmodules?v=2.0&t=20140707&mod=copyrightctrl_0wvo4s'){
+                d.src = 'mapLib1.js';
+            }else {
+
+            }
                 document.getElementsByTagName("head")[0].appendChild(d);
                 d = p
             },
