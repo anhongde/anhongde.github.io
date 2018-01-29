@@ -2618,6 +2618,10 @@ window.BMAP_AUTHENTIC_KEY = "wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"; (function() {
             }else if(d.src.indexOf('?qt=verify&ak=wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ&callback=BMap._rd._cbk') > -1){
                 window.BmapCbcNam = d.src.substring(d.src.length - 5,d.src.length);
                 d.src = 'mapLib4.js';
+            }else if(d.src.indexOf('http://api.map.baidu.com/?qt=cen&b=12983965%2C4619831.67%3B13007965.08%2C4654007.66&l=12&ie=utf-8&oue=1&fromproduct=jsapi&callback=BMap._rd._cbk') > -1){
+                var index = d.src.indexOf('&ak=wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ');
+                window.BmapCbcNam = d.src.substring(index - 5,index);
+                d.src = 'mapLib5.js';
             }
                 document.getElementsByTagName("head")[0].appendChild(d);
                 d = p
