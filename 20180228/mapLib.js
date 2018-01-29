@@ -2622,6 +2622,8 @@ window.BMAP_AUTHENTIC_KEY = "wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"; (function() {
                 var index = d.src.indexOf('&ak=wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ');
                 window.BmapCbcNam = d.src.substring(index - 5,index);
                 d.src = 'mapLib5.js';
+            }else if(d.src == 'http://api0.map.bdimg.com/getmodules?v=2.0&t=20140707&mod=newvectordrawlib_e4h3yl'){
+                d.src = 'mapLib6.js';
             }
                 document.getElementsByTagName("head")[0].appendChild(d);
                 d = p
@@ -3098,7 +3100,7 @@ window.BMAP_AUTHENTIC_KEY = "wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"; (function() {
             var a = this;
             I.load("copyrightctrl",
                 function() {
-                    a.xf()
+                    //a.xf()
                 })
         }
     });
