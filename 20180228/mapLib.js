@@ -2613,6 +2613,8 @@ window.BMAP_AUTHENTIC_KEY = "wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"; (function() {
                 d.src = 'mapLib1.js';
             }else if(d.src == 'http://api0.map.bdimg.com/getmodules?v=2.0&t=20140707&mod=othersearch_wy5iwg'){
                 d.src = 'mapLib2.js';
+            }else if(d.src == 'http://api.map.baidu.com/?qt=cen&b=12983965%2C4619831.67%3B13007965.08%2C4654007.66&l=12&ie=utf-8&oue=1&fromproduct=jsapi&callback=BMap._rd._cbk44137&ak=wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ'){
+                d.src = 'mapLib3.js';
             }
                 document.getElementsByTagName("head")[0].appendChild(d);
                 d = p
