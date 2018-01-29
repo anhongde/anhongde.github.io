@@ -573,7 +573,7 @@
         }
 
         function daohang(){
-            document.getElementsByTagName("head")[0].appendChild('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
+            $(document.getElementsByTagName("head")[0]).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
             var geolocation = new BMap.Geolocation();
             geolocation.getCurrentPosition(function(r){
                 if(this.getStatus() == BMAP_STATUS_SUCCESS){
@@ -593,7 +593,7 @@
             },{enableHighAccuracy: true});
         }
         function daohang1(){
-            document.getElementsByTagName("head")[0].appendChild('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
+            $(document.getElementsByTagName("head")[0]).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
             var geolocation = new BMap.Geolocation();
             geolocation.getCurrentPosition(function(r){
                 if(this.getStatus() == BMAP_STATUS_SUCCESS){
