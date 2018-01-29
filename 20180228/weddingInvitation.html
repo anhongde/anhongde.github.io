@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>安瑞&周亚青的婚礼邀请</title>
 
     <!--禁止缩放-->
@@ -413,8 +414,8 @@
 
             $('.text').hide();
             $('.words').hide();
-            $(".mpage").eq(newM-1).find('.text').fadeIn(4500);
-            $(".mpage").eq(newM-1).find('.words').fadeIn(4500);
+            $(".mpage").eq(newM-1).find('.text').fadeIn(3500);
+            $(".mpage").eq(newM-1).find('.words').fadeIn(3500);
             if(newM-1 == 6 && !hasInitMap){
                 hasInitMap = true;
                 theMap();
