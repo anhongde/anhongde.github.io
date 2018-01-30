@@ -674,10 +674,10 @@ a {
   display: block !important;
 }
 /*字体*/
-@font-face {
-  font-family: bansong;
+/*@font-face {
+  font-family: \5b8b\4f53;
   src: url("img/HQ1u5Bjx.ttf");
-}
+}*/
 /*各种样式*/
 body {
   color: #FFF;
@@ -845,7 +845,7 @@ body .page2 img {
   position: absolute;
 }
 body .page2 .text {
-  font-family: bansong;
+  font-family: \5b8b\4f53;
   position: absolute;
   font-size: 1.9em;
   color: #b5221a;
@@ -856,7 +856,7 @@ body .page2 .text {
   display: none;
 }
 body .page2 .words {
-  font-family: bansong;
+  font-family: \5b8b\4f53;
   position: absolute;
   color: #9e3b14;
   font-size: 1.5em;
@@ -877,12 +877,12 @@ body .page2 .share img {
   width: 2.5em;
 }
 body .page2 .share p {
-  font-family: bansong;
+  font-family: \5b8b\4f53;
   margin-left: 1.6em;
   color: #228DFF;
   /* width: 1.5em; */
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.6em;
+  line-height: 1.6em;
 }
 body .textImg {
   width: 3em;
