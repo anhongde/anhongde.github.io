@@ -183,6 +183,16 @@
     <section class="weixin-share" onclick="cancle_share_weixin(this);">
         <img src="img/guide.png">
     </section>
+    <section class="weixin-share" onclick="cancle_share_weixin(this);">
+
+        <p style="width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50%;">
+
+        </p>
+
+    </section>
 
     <script type="text/javascript">
         var offsetX = $("#loveHeart").width() / 2;
@@ -428,14 +438,16 @@
 
                         var u = navigator.userAgent; // 客户端环境信息
                         if(u.indexOf('MicroMessenger')>-1){
-                            $('.weixin-share').css('display','block');
+                            $('.weixin-share').eq(0).css('display','block');
                             //禁止滚动
                             $(document.body).css('overflow','hidden');
                             $(document.body).on('touchmove',function(e){e.preventDefault();});
                         }else{
-                            $(this).next().addClass('open');
-                            $(this).next().css('z-index',1);
-                            $(this).next().children().addClass('open');
+//                            $(this).next().addClass('open');
+//                            $(this).next().css('z-index',1);
+//                            $(this).next().children().addClass('open');
+                            $('.weixin-share').eq(1).find('p').html('请在微信中进行分享操作');
+                            $('.weixin-share').eq(1).css('display','block');
                         }
                     });
                 },200);
@@ -574,6 +586,8 @@
 
         function daohang(){
             $(document.getElementsByTagName("head")[0]).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
+            $('.weixin-share').eq(1).find('p').html('正在跳转导航页面，请稍后...');
+            $('.weixin-share').eq(1).css('display','block');
             var geolocation = new BMap.Geolocation();
             geolocation.getCurrentPosition(function(r){
                 if(this.getStatus() == BMAP_STATUS_SUCCESS){
@@ -591,9 +605,15 @@
                     alert('failed'+this.getStatus());
                 }
             },{enableHighAccuracy: true});
+
+            setTimeout(function(){
+                $('.weixin-share').eq(1).find('p').html('操作超时，请重试，或切换到地图App操作');
+            },30000);
         }
         function daohang1(){
             $(document.getElementsByTagName("head")[0]).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
+            $('.weixin-share').eq(1).find('p').html('正在跳转导航页面，请稍后...');
+            $('.weixin-share').eq(1).css('display','block');
             var geolocation = new BMap.Geolocation();
             geolocation.getCurrentPosition(function(r){
                 if(this.getStatus() == BMAP_STATUS_SUCCESS){
@@ -611,6 +631,9 @@
                     alert('failed'+this.getStatus());
                 }
             },{enableHighAccuracy: true});
+            setTimeout(function(){
+                $('.weixin-share').eq(1).find('p').html('操作超时，请重试，或切换到地图App操作');
+            },30000);
         }
         /**
          * 关闭微信分享
