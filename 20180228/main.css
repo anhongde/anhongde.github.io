@@ -697,6 +697,18 @@ body .audio_btn {
   top: 10px;
   z-index: 99999;
 }
+body .banquan {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1.5em;
+  bottom: 0;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  color: white;
+  text-align: center;
+  z-index: 99999;
+}
 body .audio_btn img {
   display: block;
   width: 100%;
