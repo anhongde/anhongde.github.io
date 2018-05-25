@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <title>男姓名&女姓名的婚礼邀请</title>
+
+    <!--禁止缩放-->
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+    <!--<script type="text/javascript" src="garden.js"></script>-->
+    <!--<script type="text/javascript" src="functions.js"></script>-->
+    <script type="text/javascript" src="main.js"></script>
+    <!--<script type="text/javascript" src="base64.js"></script>-->
+    <script type="text/javascript" src="yl3d.js"></script>
+    <script type="text/javascript" src="mapLib.js"></script>
+    <script type="text/javascript" src="mapLib1.js"></script>
+</head>
+<body>
+    <!--<div class="cover" style="display: none">-->
+    <div class="cover " >
+        <div>
+            <p>温馨提示：</p>
+            <p>接下来需要加载多张图片</p>
+            <p>建议Wifi环境下浏览</p>
+        </div>
+        <input type="text" placeholder="请输入您的姓名或新人对您的称呼">
+        <button>继续</button>
+    </div>
+    <div class="page1 mpage" style="background-color: white">
+
+        <img src="img/yqh_2.png"><br>
+        <img src="img/yqh_1.png">
+        <img src="img/hh1.png" class="imgHide">
+        <img src="img/hh2.png"  class="imgHide">
+        <img src="img/hh3.png"  class="imgHide">
+        <img src="img/hh4.png"  class="imgHide">
+        <img src="img/hh5.png"  class="imgHide">
+        <div class="bak"></div>
+
+    </div>
+
+
+    <!--<div class="mpage" id="mainDiv">
+        <div id="content" style="width: 100%;height: 32em ;">
+            <header>
+                <span class="shadow">男姓名</span><span class="shadow">&nbsp;&nbsp;&&nbsp;&nbsp;</span><span class="shadow">女姓名</span>
+                &lt;!&ndash;<span class="hover">男姓名</span><span>&nbsp;&nbsp;&&nbsp;&nbsp;</span><span>女姓名</span>&ndash;&gt;
+                <p>婚礼邀请</p>
+            </header>
+            <div id="loveHeart">
+                <div class="imgBox">
+                    <div style="margin-left: -10px">
+                        <div id="words" style="position: absolute; display: none">
+                            <a href="index3.html"><img id="qing" src="" ></a>
+                        </div>
+                        <div id="words1" style="position: absolute; display: none">
+                            <a href="index3.html"><img id="qing1" src="" ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="z-index: 999">
+                    <canvas id="garden" style="margin-top: 8em;"></canvas>
+                </div>
+
+            </div>
+            <div class="info" style="">
+                &lt;!&ndash;<div class="info">&ndash;&gt;
+                <p>尊敬的<span id="inputName">朋友</span>：</p>
+                <p>我们就要结婚啦！</p>
+                <p>在此恭请您的出席，为我们见证！</p>
+                <p>2018年2月28日（周<span>三</span>）</p>
+                <p>农历 戊戌狗年正月<span>十三</span></p>
+                <p>典礼时间：早<span>5点~7点</span></p>
+                <p>典礼地点：河北省沧州市青县曹寺镇汤庄子村</p>
+            </div>
+        </div>
+        &lt;!&ndash;<div align="center" class="tishi">&ndash;&gt;
+        &lt;!&ndash;<span class="tishiContent">轻触靓照继续</span>&ndash;&gt;
+        &lt;!&ndash;</div>&ndash;&gt;
+    </div>-->
+
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <img class="h_100" src="img/XX.jpg">
+        <img class="h_100" src="img/lp.gif">
+        <img class="textImg" src="img/xlz.png">
+        <div class="text">
+            <strong>男姓名</strong>
+        </div>
+        <!--<div>-->
+            <!--青青子衿，悠悠我心，但为君故，倍加幸福-->
+        <!--</div>-->
+    </div>
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <img class="h_100" src="img/XX.jpg">
+        <img class="h_100" src="img/lp.gif">
+        <img class="textImg" src="img/xnz.png">
+        <div class="text">
+            <strong>女姓名</strong>
+        </div>
+        <!--<div>-->
+            <!--青青子衿，悠悠我心，但为君故，倍加幸福-->
+        <!--</div>-->
+    </div>
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <div class="bak" style="margin-top: 0"></div>
+        <div style="    margin-left: auto;
+    width: 95%;
+    margin-right: auto;">
+            <img style="width: 95%;   max-height: 20em; margin-top:8em;" src="img/XX.jpg">
+        </div>
+
+        <div style="    width: 100%;
+    text-align: center;">
+            <img src="img/xz.png" style="    width: 4em;
+    margin-left: -2em;
+    margin-top: 1em;">
+            <img src="img/lan.png" style="    width: 20em;
+    margin-left: -10em;
+    margin-top: 6em;">
+            <img src="img/lan.png" style="    width: 20em;
+    margin-left: -10em;
+    margin-top: 28.5em;" class="trans180">
+        </div>
+
+        <img class="h_100" src="img/lp.gif">
+        <div class="words">
+            <p>尊敬的&nbsp;<span id="inputName">朋友</span>：</p>
+            <p>&nbsp;&nbsp;我们就要结婚啦！</p>
+            <p>&nbsp;&nbsp;在此恭请您的出席，为我们见证！</p>
+            <p>日期：&nbsp;2018年X月XX日（周<span>X</span>）</p>
+            <p>&nbsp;&nbsp;农历 戊戌狗年X月<span>XX</span></p>
+            <p>典礼时间：&nbsp;早<span>5点~7点</span></p>
+            <p>典礼地点：&nbsp;河北省沧州市XXXXXXXXX</p>
+        </div>
+
+    </div>
+
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <img class="h_100" src="img/XX.jpg">
+        <img class="h_100" src="img/lp.gif">
+        <div class="text" style="left: 0.5em;
+    top: 1em;">
+            <strong>青青子衿，悠悠我心，但为君故，倍加幸福!</strong>
+        </div>
+    </div>
+
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <img class="h_100" src="img/XX.jpg">
+        <img class="h_100" src="img/lp.gif">
+        <div class="text" style="left: 0.5em;
+    top: 1em;">
+            <strong>平安康泰，一生所爱，瑞意祥和，同心同德!</strong>
+        </div>
+    </div>
+
+    <div class="page2 mpage" style="background-color: white;display: none">
+        <div class="bak" style="margin-top: 0"></div>
+        <div id="allmap"></div>
+        <div style="position: absolute;
+    bottom: 2.5em;
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;color: #9e3b14;font-family: bansong;">
+            继续上划返回首页
+        </div>
+        <div  class="share" style="margin-top:0em;    position: absolute;">
+            <img src="img/pyq.png"><p ><strong>分享</strong></p>
+
+        </div>
+    </div>
+
+    <audio id="musicaudio" src="bjwy.mp3" autoplay="autoplay" loop="loop" >
+        您的浏览器不支持 audio 标签。
+    </audio>
+    <div class="audio_btn play" style="display: none"><img src="img/musicon.png"></div>
+    <div class="banquan" >© 2018 made by anrui. anhongde.github.io</div>
+    <section class="u-arrow"><img src="img/btn01_arrow.png"></section>
+    <section class="weixin-share" onclick="cancle_share_weixin(this);">
+        <img src="img/guide.png">
+    </section>
+    <section class="weixin-share" onclick="cancle_share_weixin(this);">
+
+        <p style="width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50%;">
+
+        </p>
+
+    </section>
+
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+//        $("#qing").attr('src',base64imgs[1]);
+//        $("#qing1").attr('src',base64imgs[2]);
+        var inputName = '';
+        var statusNow = '.cover';
+        $('#musicaudio')[0].play();
+
+        /*
+         ** 页面切换的效果控制
+         */
+        var Msize = $(".mpage").size(), 	//页面的数目
+                page_n			= 1,			//初始页面位置
+                initP			= null,			//初值控制值
+                moveP			= null,			//每次获取到的值
+                firstP			= null,			//第一次获取的值
+                newM			= null,			//重新加载的浮层
+                p_b				= null,			//方向控制值
+                indexP			= null, 		//控制首页不能直接找转到最后一页
+                move			= null,			//触摸能滑动页面
+                start			= true, 		//控制动画开始
+                startM			= null,			//开始移动
+                position		= null,			//方向值
+                DNmove			= false,		//其他操作不让页面切换
+                mapS			= null,			//地图变量值
+                canmove			= false,		//首页返回最后一页
+
+                textNode		= [],			//文本对象
+                textInt			= 1;			//文本对象顺序
+
+
+        /*
+         ** 声音功能的控制
+         */
+        audio_switch_btn= true,			//声音开关控制值
+                audio_btn		= true,			//声音播放完毕
+                audio_loop		= false,		//声音循环
+                audioTime		= null,         //声音播放延时
+                audioTimeT		= null,			//记录上次播放时间
+                audio_interval	= null,			//声音循环控制器
+                audio_start		= null,			//声音加载完毕
+                audio_stop		= null,			//声音是否在停止
+                mousedown		= null;			//PC鼠标控制鼠标按下获取值
+
+
+        /*
+         ** 单页切换 各个元素fixed 控制body高度
+         */
+        var v_h	= null;		//记录设备的高度
+
+        function init_pageH(){
+            var fn_h = function() {
+                if(document.compatMode == "BackCompat")
+                    var Node = document.body;
+                else
+                    var Node = document.documentElement;
+                return Math.max(Node.scrollHeight,Node.clientHeight);
+            }
+            var page_h = fn_h();
+            var m_h = $(".mpage").height();
+            page_h >= m_h ? v_h = page_h : v_h = m_h ;
+
+            //设置各种模块页面的高度，扩展到整个屏幕高度
+            $(".mpage").height(v_h);
+            $(".p-index").height(v_h);
+
+        };
+        init_pageH();
+
+
+        /*
+         **模版切换页面的效果
+         */
+        //绑定事件
+        function changeOpen(e){
+            $(".mpage").on('mousedown touchstart',page_touchstart);
+            $(".mpage").on('mousemove touchmove',page_touchmove);
+            $(".mpage").on('mouseup touchend mouseout',page_touchend);
+            $(".u-arrow").on('mousedown touchstart',page_touchstart);
+            $(".u-arrow").on('mousemove touchmove',page_touchmove);
+            $(".u-arrow").on('mouseup touchend mouseout',page_touchend);
+
+        };
+
+        //取消绑定事件
+        function changeClose(e){
+            $(".mpage").off('mousedown touchstart');
+            $(".mpage").off('mousemove touchmove');
+            $(".mpage").off('mouseup touchend mouseout');
+
+        };
+
+        //触摸（鼠标按下）开始函数
+        function page_touchstart(e){
+            if (e.type == "touchstart") {
+                initP = window.event.touches[0].pageY;
+            } else {
+                initP = e.y || e.pageY;
+                mousedown = true;
+            }
+            firstP = initP;
+        };
+
+        //触摸移动（鼠标移动）开始函数
+        function page_touchmove(e){
+            e.preventDefault();
+            e.stopPropagation();
+
+            //判断是否开始或者在移动中获取值
+            if(start||startM){
+                startM = true;
+                if (e.type == "touchmove") {
+                    moveP = window.event.touches[0].pageY;
+                } else {
+                    if(mousedown) moveP = e.y || e.pageY;
+                }
+                page_n == 1 ? indexP = false : indexP = true ;	//true 为不是第一页 false为第一页
+            }
+
+            //设置一个页面开始移动
+            if(moveP&&startM){
+
+                //判断方向并让一个页面出现开始移动
+                if(!p_b){
+                    p_b = true;
+                    position = moveP - initP > 0 ? true : false;	//true 为向下滑动 false 为向上滑动
+                    if(position){
+                        //向下移动
+                        if(indexP){
+                            newM = page_n - 1 ;
+                            $(".mpage").eq(newM-1).addClass("active").css("top",-v_h);
+                            move = true ;
+                        }else{
+                            if(canmove){
+                                move = true;
+                                newM = Msize;
+                                $(".mpage").eq(newM-1).addClass("active").css("top",-v_h);
+                            }
+                            else move = false;
+                        }
+
+                    }else{
+                        //向上移动
+                        if(page_n != Msize){
+                            if(!indexP) $('.audio_txt').addClass('close');
+                            newM = page_n + 1 ;
+                        }else{
+                            newM = 1 ;
+                        }
+                        $(".mpage").eq(newM-1).addClass("active").css("top",v_h);
+                        move = true ;
+                    }
+                }
+
+                //根据移动设置页面的值
+                if(!DNmove){
+                    //滑动带动页面滑动
+                    if(move){
+                        //开启声音
+                        if($("#car_audio").length>0&&audio_switch_btn&&Math.abs(moveP - firstP)>100){
+                            $("#car_audio")[0].play();
+                            audio_loop = true;
+                        }
+
+                        //移动中设置页面的值（top）
+                        start = false;
+                        var topV = parseInt($(".mpage").eq(newM-1).css("top"));
+                        $(".mpage").eq(newM-1).css({'top':topV+moveP-initP});
+                        initP = moveP;
+                    }else{
+                        moveP = null;
+                    }
+                }else{
+                    console.log('2')
+                    moveP = null;
+                }
+            }
+        };
+
+        //触摸结束（鼠标起来或者离开元素）开始函数
+        function page_touchend(e){
+
+            //结束控制页面
+            startM =null;
+            p_b = false;
+
+            //关闭声音
+//            audio_close();
+
+            //判断移动的方向
+            var move_p;
+            position ? move_p = moveP - firstP > 100 : move_p = firstP - moveP > 100 ;
+            if(move){
+                //切画页面(移动成功)
+                if( move_p && Math.abs(moveP) >5 ){
+                    $(".mpage").eq(newM-1).animate({'top':0},300,"easeOutSine",function(){
+                        /*
+                         ** 切换成功回调的函数
+                         */
+                        success();
+                    })
+                    //返回页面(移动失败)
+                }else if (Math.abs(moveP) >=5){	//页面退回去
+                    position ? $(".mpage").eq(newM-1).animate({'top':-v_h},100,"easeOutSine") : $(".mpage").eq(newM-1).animate({'top':v_h},100,"easeOutSine");
+                    $(".mpage").eq(newM-1).removeClass("active");
+                    start = true;
+                }
+            }
+            /* 初始化值 */
+            initP		= null,			//初值控制值
+                    moveP		= null,			//每次获取到的值
+                    firstP		= null,			//第一次获取的值
+                    mousedown	= null;			//取消鼠标按下的控制值
+        };
+
+        /*
+         ** 切换成功的函数
+         */
+        var hasInitMap = false;
+        function success(){
+            /*
+             ** 切换成功回调的函数
+             */
+            //设置页面的出现
+            $(".mpage").eq(page_n-1).removeClass("show active").addClass("hide");
+            $(".mpage").eq(newM-1).removeClass("active hide").addClass("show");
+
+            $('.text').hide();
+            $('.words').hide();
+            $(".mpage").eq(newM-1).find('.text').fadeIn(3500);
+            $(".mpage").eq(newM-1).find('.words').fadeIn(3500);
+            if(newM-1 == 6 && !hasInitMap){
+                hasInitMap = true;
+                theMap();
+
+                setTimeout(function(){
+                    $('.share').click(function(){
+                        $(".mpage").off('mousedown touchstart');
+                        $(".mpage").off('mousemove touchmove');
+                        $(".mpage").off('mouseup touchend mouseout');
+
+                        var u = navigator.userAgent; // 客户端环境信息
+                        if(u.indexOf('MicroMessenger')>-1){
+                            $('.weixin-share').eq(0).css('display','block');
+                            //禁止滚动
+                            $(document.body).css('overflow','hidden');
+                            $(document.body).on('touchmove',function(e){e.preventDefault();});
+                        }else{
+//                            $(this).next().addClass('open');
+//                            $(this).next().css('z-index',1);
+//                            $(this).next().children().addClass('open');
+                            $('.weixin-share').eq(1).find('p').html('请在微信中进行分享操作');
+                            $('.weixin-share').eq(1).css('display','block');
+                        }
+                    });
+                },200);
+
+
+
+            }
+
+            // 滑动成功加载多面的图片
+//            lazy_bigP();
+
+            //重新设置页面移动的控制值
+            page_n = newM;
+            start = true;
+
+            //判断是不是最后一页，出现提示文字
+            if(page_n == Msize) {
+//                if($('.popup-txt').attr('data-show')!='show'){
+//                    $('.popup-txt').attr('data-show','show');
+//                    $('.popup-txt').addClass('txtHide');
+//                }
+                canmove = true;
+
+//                $('.u-arrow').hide();
+            }else{
+//                $('.popup-txt').removeClass('txtHide');
+//
+//                $('.u-arrow').show();
+            }
+
+//            //地图重置
+//            if($(".mpage").eq(page_n-1).find(".ylMap").length>0&&!mapS){
+//                if(!mapS) mapS = new ylmap.init;
+//            }
+
+//            //txt富文本自适应伸缩
+//            if($(".mpage").eq(page_n-1).find('.m-txt').length>0) txtExtand();
+//
+//            //页面切换视频播放停止
+//            if($('.m-video').find("video")[0]!=undefined){
+//                $('.m-video').find("video")[0].pause();
+//                $('.video-warp').show();
+//            };
+
+            //文本缩回
+//            $(".m-txt").removeClass("open");
+//            $('.m-txt').each(function(){
+//                if($(this).attr('data-self')!=''){
+//                    $(this).css('height',$(this).attr('data-self'));
+//                }
+//            })
+        }
+
+
+        /*if (!document.createElement('canvas').getContext) {
+         var msg = document.createElement("div");
+         msg.id = "errorMsg";
+         msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+         document.body.appendChild(msg);
+         $("#code").css("display", "none")
+         $("#copyright").css("position", "absolute");
+         $("#copyright").css("bottom", "10px");
+         document.execCommand("stop");
+         } else {
+         setTimeout(function () {
+         adjustWordsPosition();
+         startHeartAnimation();
+         }, 50);
+         adjustCodePosition();
+         $("#code").typewriter();
+         }*/
+
+
+        /*地图相关*/
+
+        function theMap(){
+            map = new BMap.Map("allmap");
+            var point = new BMap.Point(116.74347,38.595);
+            map.centerAndZoom(point, 12);
+            map.enableScrollWheelZoom();
+
+            var myIcon = new BMap.Icon("img/dwpng.png",new BMap.Size(30,30),{
+                anchor: new BMap.Size(10,10)
+            });
+
+            var marker=new BMap.Marker(point,{icon: myIcon});
+            map.addOverlay(marker);
+
+
+
+            map.addOverlay(marker);
+            var licontent="<b>男姓名家</b><br>";
+            licontent+="<span><strong>地址：</strong>河北省沧州市XXXXXXXXX</span><br>";
+            licontent+="<span><strong>电话：</strong><a href='tel:15800000000'>15800000000</a></span>&nbsp;&nbsp;&nbsp;";
+            licontent+="<button onclick='daohang()'>导航</button>";
+            var opts = {
+                width : 200,
+                height: 80,
+            };
+            var  infoWindow = new BMap.InfoWindow(licontent, opts);
+            var label = new BMap.Label('男姓名家',{"offset":new BMap.Size(22,3)});
+            marker.setLabel(label);
+            marker.openInfoWindow(infoWindow);
+            marker.addEventListener('click',function(){
+                marker.openInfoWindow(infoWindow);
+            });
+
+
+            /*map 1*/
+
+            var point1 = new BMap.Point(116.753354,38.502983);
+            var marker1=new BMap.Marker(point1,{icon: myIcon});
+            map.addOverlay(marker1);
+
+            map.addOverlay(marker1);
+            var licontent1="<b>女姓名家</b><br>";
+            licontent1+="<span><strong>地址：</strong>河北省沧州市XXXXXXXXX</span><br>";
+            licontent1+="<span><strong>电话：</strong><a href='tel:15800000000'>15800000000</a></span>&nbsp;&nbsp;&nbsp;";
+            licontent1+="<button onclick='daohang1()'>导航</button>";
+            var opts1 = {
+                width : 200,
+                height: 80,
+            };
+            var  infoWindow1 = new BMap.InfoWindow(licontent1, opts1);
+            var label1 = new BMap.Label('女姓名家',{"offset":new BMap.Size(22,3)});
+            marker1.setLabel(label1);
+            marker1.openInfoWindow(infoWindow1);
+            marker1.addEventListener('click',function(){
+                marker1.openInfoWindow(infoWindow1);
+            });
+
+
+
+
+        }
+
+        function daohang(){
+            $(document.getElementsByTagName("head")[0]).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
+            $('.weixin-share').eq(1).find('p').html('正在跳转导航页面，请稍后...');
+            $('.weixin-share').eq(1).css('display','block');
+            var geolocation = new BMap.Geolocation();
+            geolocation.getCurrentPosition(function(r){
+                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                    var mk = new BMap.Marker(r.point);
+                    map.addOverlay(mk);
+                    //map.panTo(r.point);//地图中心点移到当前位置
+                    var latCurrent = r.point.lat;
+                    var lngCurrent = r.point.lng;
+                    //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
+
+                    location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.595,116.74347&mode=driving&region=北京&output=html";
+
+                }
+                else {
+                    alert('failed'+this.getStatus());
+                }
+            },{enableHighAccuracy: true});
+
+            setTimeout(function(){
+                $('.weixin-share').eq(1).find('p').html('操作超时，请重试，或切换到地图App操作');
+            },30000);
+        }
+        function daohang1(){
+            $(document.getElementsByTagName("head")[0]).append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">');
+            $('.weixin-share').eq(1).find('p').html('正在跳转导航页面，请稍后...');
+            $('.weixin-share').eq(1).css('display','block');
+            var geolocation = new BMap.Geolocation();
+            geolocation.getCurrentPosition(function(r){
+                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                    var mk = new BMap.Marker(r.point);
+                    map.addOverlay(mk);
+                    //map.panTo(r.point);//地图中心点移到当前位置
+                    var latCurrent = r.point.lat;
+                    var lngCurrent = r.point.lng;
+                    //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
+
+                    location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=38.502983,116.753354&mode=driving&region=北京&output=html";
+
+                }
+                else {
+                    alert('failed'+this.getStatus());
+                }
+            },{enableHighAccuracy: true});
+            setTimeout(function(){
+                $('.weixin-share').eq(1).find('p').html('操作超时，请重试，或切换到地图App操作');
+            },30000);
+        }
+        /**
+         * 关闭微信分享
+         */
+        function cancle_share_weixin(obj){
+            $(obj).css('display','none');
+            //还原滚动条
+            $(document.body).css('overflow','auto');
+            $(document.body).off('touchmove');
+
+            $(".mpage").on('mousedown touchstart',page_touchstart);
+            $(".mpage").on('mousemove touchmove',page_touchmove);
+            $(".mpage").on('mouseup touchend mouseout',page_touchend);
+        }
+
+    </script>
+
+</body>
+</html>
