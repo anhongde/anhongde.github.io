@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let cssArr = [
+        ];
+        let jsArr = [
+            'assets/js/jquery-2.1.4.min.js',
+        ];
+    </script>
+    <script src="./initCssJs.js"></script>
+</head>
+<body>
+<input id="input" type="number" placeholder="90106"><button onclick="clickBtn()">确定</button>
+<!--<iframe id="ifr" src="http://localhost:8082/behavior.html?customerId=90106" id="behavior_iframe" height="1200px" style="overflow-x: hidden;max-width: 1200px;width: 100%"></iframe>-->
+<iframe id="ifr" src="./behavior.html?customerId=90106" id="behavior_iframe" height="1200px" style="overflow-x: hidden;max-width: 1200px;width: 100%"></iframe>
+
+<script>
+    function clickBtn(){
+
+//        alert($('#input').val());
+        if($('#input').val()!=''){
+//            $('#ifr').attr('src','http://localhost:8082/behavior.html?customerId='+$('#input').val())
+            $('#ifr').attr('src','./behavior.html?customerId='+$('#input').val())
+        }
+    }
+</script>
+</body>
+</html>
