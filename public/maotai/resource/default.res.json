@@ -9,7 +9,7 @@
 			"name": "game"
 		},
 		{
-			"keys": "selected_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,bg_down_png,com_btn_png,go_btn_png,save_btn_png,share_btn_png,sw_btn_png,index_png,index2_png,index3_png,beige_btn_png,bg_red_png,blue_btn_png,brown_btn_png,green_btn_png,light_btn_png,red_btn_png,select_bg_png,white_btn_png,yellow_btn_png,1s_png,2s_png,3s_png,4s_png,5s_png,6s_png,7s_png,2b_png,3b_png,4b_png,5b_png,6b_png,7b_png,1b_png,left_btn_png,moren_png,bg_2_png,cloud_2_png,dragon_2_png,tou_2_png,zhua_2_png,zs_2_png,bg_8_png,cloud_8_png,dragon_8_png,tou_8_png,zhua_8_png,zs_8_png, bg_5_png,cloud_5_png,dragon_5_png,tou_5_png,zhua_5_png,zs_5_png,bg_3_png,cloud_3_png,dragon_3_png,tou_3_png,zhua_3_png,zs_3_png,bg_4_png,cloud_4_png,tou_4_png,zhua_4_png,zs_4_png,bg_6_png,cloud_6_png,dragon_6_png,tou_6_png,zhua_6_png,zs_6_png,bg_7_png,cloud_7_png,dragon_7_png,tou_7_png,zhua_7_png,zs_7_png,cloud_1_png,dragon_1_png,tou_1_png,zhua_1_png,zs_1_png,dragon_4_png,bg_1_png",
+			"keys": "selected_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,bg_down_png,com_btn_png,go_btn_png,save_btn_png,share_btn_png,sw_btn_png,index_png,index2_png,index3_png,beige_btn_png,bg_red_png,blue_btn_png,brown_btn_png,green_btn_png,light_btn_png,red_btn_png,select_bg_png,white_btn_png,yellow_btn_png,1s_png,2s_png,3s_png,4s_png,5s_png,6s_png,7s_png,2b_png,3b_png,4b_png,5b_png,6b_png,7b_png,1b_png,left_btn_png,moren_png,bg_2_png,cloud_2_png,dragon_2_png,tou_2_png,zhua_2_png,zs_2_png,bg_8_png,cloud_8_png,dragon_8_png,tou_8_png,zhua_8_png,zs_8_png,cloud_5_png,dragon_5_png,tou_5_png,zhua_5_png,zs_5_png,bg_3_png,cloud_3_png,dragon_3_png,tou_3_png,zhua_3_png,zs_3_png,bg_4_png,cloud_4_png,tou_4_png,zhua_4_png,zs_4_png,bg_6_png,cloud_6_png,dragon_6_png,tou_6_png,zhua_6_png,zs_6_png,bg_7_png,cloud_7_png,dragon_7_png,tou_7_png,zhua_7_png,zs_7_png,cloud_1_png,dragon_1_png,tou_1_png,zhua_1_png,zs_1_png,dragon_4_png,bg_1_png,bg_5_png,bg_0_png,cloud_0_png,dragon_0_png,tou_0_png,zhua_0_png,zs_0_png,ma_png",
 			"name": "scene"
 		}
 	],
@@ -175,96 +175,6 @@
 			"type": "sound",
 			"name": "bg_mp3",
 			"soundType": "music"
-		},
-		{
-			"url": "sound/effect_bet_1.wav",
-			"type": "sound",
-			"name": "effect_bet_1_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_2.wav",
-			"type": "sound",
-			"name": "effect_bet_2_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_3.wav",
-			"type": "sound",
-			"name": "effect_bet_3_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_4.wav",
-			"type": "sound",
-			"name": "effect_bet_4_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_5.wav",
-			"type": "sound",
-			"name": "effect_bet_5_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_6.wav",
-			"type": "sound",
-			"name": "effect_bet_6_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_7.wav",
-			"type": "sound",
-			"name": "effect_bet_7_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_bet_8.wav",
-			"type": "sound",
-			"name": "effect_bet_8_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_fail.wav",
-			"type": "sound",
-			"name": "effect_fail_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_lucky_jump.wav",
-			"type": "sound",
-			"name": "effect_lucky_jump_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_lucky.wav",
-			"type": "sound",
-			"name": "effect_lucky_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_menu.wav",
-			"type": "sound",
-			"name": "effect_menu_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_random.wav",
-			"type": "sound",
-			"name": "effect_random_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_round.wav",
-			"type": "sound",
-			"name": "effect_round_wav",
-			"soundType": "effect"
-		},
-		{
-			"url": "sound/effect_win.wav",
-			"type": "sound",
-			"name": "effect_win_wav",
-			"soundType": "effect"
 		},
 		{
 			"url": "db/armature/body_tex.png",
@@ -567,11 +477,6 @@
 			"name": "zs_8_png"
 		},
 		{
-			"url": "assets/gameUI/game/dragon/brown/bg_5.png",
-			"type": "image",
-			"name": " bg_5_png"
-		},
-		{
 			"url": "assets/gameUI/game/dragon/brown/cloud_5.png",
 			"type": "image",
 			"name": "cloud_5_png"
@@ -750,6 +655,46 @@
 			"url": "sound/click.wav",
 			"type": "sound",
 			"name": "click_wav"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/bg_5.png",
+			"type": "image",
+			"name": "bg_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/empty/bg_0.png",
+			"type": "image",
+			"name": "bg_0_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/empty/cloud_0.png",
+			"type": "image",
+			"name": "cloud_0_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/empty/dragon_0.png",
+			"type": "image",
+			"name": "dragon_0_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/empty/tou_0.png",
+			"type": "image",
+			"name": "tou_0_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/empty/zhua_0.png",
+			"type": "image",
+			"name": "zhua_0_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/empty/zs_0.png",
+			"type": "image",
+			"name": "zs_0_png"
+		},
+		{
+			"url": "assets/gameUI/game/ma.png",
+			"type": "image",
+			"name": "ma_png"
 		}
 	]
 }
