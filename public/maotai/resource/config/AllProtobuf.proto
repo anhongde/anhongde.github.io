@@ -1,0 +1,46 @@
+package AllProtobuf;
+option java_package = "cpgame.demo.proto";
+option java_outer_classname = "AllProtobuf";
+
+//-------------后端业务通用的存储工具protobuf-------------
+//-------------后端业务通用的存储工具protobuf-------------
+
+//---------------后端存储需要用到的protobuf--------------
+message UserProto{
+	optional int64 id = 1;
+	optional string openid = 2;
+	optional string name = 3;
+	optional string image = 4;
+}
+//---------------后端存储需要用到的protobuf--------------
+
+
+//----------后端和前端通信时的通道号对应的protobuf----------
+message RequestProto{
+	required string s = 1;
+	required string m = 2;
+	repeated string args = 3;
+}
+
+message ResponseHead{
+	required string s = 1;
+	required string m = 2;
+}
+
+message ErrorCodeS2CProto{
+	required ResponseHead head = 1;
+	optional int32 code = 2;
+	optional string msg = 3;
+}
+
+message LoginS2CProto{
+	required ResponseHead head = 1;
+	optional UserProto user = 2;
+}
+
+message HeartS2CProto{
+	required ResponseHead head = 1;
+	optional int64 timestamp = 2;
+}
+
+//----------后端和前端通信时的通道号对应的protobuf----------

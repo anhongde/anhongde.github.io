@@ -1,0 +1,812 @@
+{
+	"groups": [
+		{
+			"keys": "egret_icon_png,description_json,jindutiao_png,jindutiaodiban_png,bg_png,black1_png,bg_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "loginBtn_png,logo_3_png,logo_2_png,logo_1_png,logo_0_png,backbtn_png,bg_png,getreg_png,gou1_png,gou2_png,inputBg_png,loginbg_png,loginregBtn_png,registerbg_png,getreg2_png",
+			"name": "game"
+		},
+		{
+			"keys": "aotu1_btn_png,aotu2_btn_png,apple_btn_png,back_btn_png,bar120_png,bell_btn_png,bg_gm_png,big_btn_png,doubleSeven_btn_png,gift_btn_png,head_bg_png,left_btn_png,message_btn_png,orange_btn_png,pear_btn_png,reset_btn_png,right_btn_png,set_btn_png,shop_btn_png,small_btn_png,star_btn_png,start_btn_png,watermelon_btn_png,item_json,apple_png,apple3_png,bar_png,bar50_png,bell_png,doubleSeven_png,doubleSeven3_png,lucky_bule_png,lucky_yellow_png,orange_png,orange3_png,pear_png,pear3_png,star_png,star3_png,watermelon_png,watermelon3_png,fontRes_json,bell3_png,select_png,selected_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,deng2_bg_png,deng1_bg_png,luckBule_json,luckYellow_json,light_png,sys_json,inputBg_png,coin_png,home_n1_png,home_n2_png,messBtn_png,openShop_png,shareBtn_png,soundBtn_png,tishikuang_11.20_png,sign_json,head_png,item1_json,buttonList_json,reward1_bg_png,reward2_bg_png,timeReward1_png,timeReward2_png",
+			"name": "scene"
+		},
+		{
+			"keys": "sign_bg_png,sign_complete_png,sign_itembg_png,money1_png,money2_png,money3_png,money4_png,money5_png,money6_png",
+			"name": "sign"
+		},
+		{
+			"keys": "recharge_bg_png,recharge_btn_png,recharge_itembg_png,recharge_select_png,recharge_wh_png,recharge_png,his_get1_png,his_get2_png,his_rec1_png,his_rec2_png",
+			"name": "recharge"
+		},
+		{
+			"keys": "recharge_bg_png,recharge_btn_png,recharge_itembg_png,recharge_select_png,recharge_wh_png",
+			"name": "reward"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png?v=1518275493000",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png?v=1518275493000",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png?v=1518275493000",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png?v=1518275493000",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png?v=1518275500000",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png?v=1518275500000",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png?v=1518275500000",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png?v=1518275500000",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png?v=1518275500000",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png?v=1518275500000",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png?v=1518275500000",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png?v=1518275500000",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png?v=1518275500000",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png?v=1518275500000",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png?v=1518275500000",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png?v=1518275500000",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png?v=1518275500000",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png?v=1518275500000",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png?v=1518275493000",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png?v=1518275493000",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png?v=1518275500000",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png?v=1518275500000",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png?v=1518275500000",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/egret_icon.png?v=1518275493000",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json?v=1517451677000",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/gameUI/loading/jindutiao.png?v=1518275498000",
+			"type": "image",
+			"name": "jindutiao_png"
+		},
+		{
+			"url": "assets/gameUI/loading/jindutiaodiban.png?v=1518275498000",
+			"type": "image",
+			"name": "jindutiaodiban_png"
+		},
+		{
+			"url": "assets/gameUI/login/bg.png?v=1518275499000",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "assets/gameUI/login/loginBtn.png?v=1520231310000",
+			"type": "image",
+			"name": "loginBtn_png"
+		},
+		{
+			"url": "assets/gameUI/black1.png?v=1518275494000",
+			"type": "image",
+			"name": "black1_png"
+		},
+		{
+			"url": "assets/gameUI/game/aotu1_btn.png?v=1518275494000",
+			"type": "image",
+			"name": "aotu1_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/aotu2_btn.png?v=1518275494000",
+			"type": "image",
+			"name": "aotu2_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/apple_btn.png?v=1518275494000",
+			"type": "image",
+			"name": "apple_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/back_btn.png?v=1519720394000",
+			"type": "image",
+			"name": "back_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/bar120.png?v=1518275494000",
+			"type": "image",
+			"name": "bar120_png"
+		},
+		{
+			"url": "assets/gameUI/game/bell_btn.png?v=1518275495000",
+			"type": "image",
+			"name": "bell_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/bg_gm.png?v=1518275495000",
+			"type": "image",
+			"name": "bg_gm_png"
+		},
+		{
+			"url": "assets/gameUI/game/big_btn.png?v=1518275495000",
+			"type": "image",
+			"name": "big_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/doubleSeven_btn.png?v=1518275495000",
+			"type": "image",
+			"name": "doubleSeven_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/gift_btn.png?v=1519720244000",
+			"type": "image",
+			"name": "gift_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/head_bg.png?v=1518275496000",
+			"type": "image",
+			"name": "head_bg_png"
+		},
+		{
+			"url": "assets/gameUI/game/left_btn.png?v=1518275497000",
+			"type": "image",
+			"name": "left_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/message_btn.png?v=1518275497000",
+			"type": "image",
+			"name": "message_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/orange_btn.png?v=1518275497000",
+			"type": "image",
+			"name": "orange_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/pear_btn.png?v=1518275497000",
+			"type": "image",
+			"name": "pear_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/reset_btn.png?v=1518275497000",
+			"type": "image",
+			"name": "reset_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/right_btn.png?v=1518275497000",
+			"type": "image",
+			"name": "right_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/set_btn.png?v=1520584790000",
+			"type": "image",
+			"name": "set_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/shop_btn.png?v=1519720294000",
+			"type": "image",
+			"name": "shop_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/small_btn.png?v=1518275498000",
+			"type": "image",
+			"name": "small_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/star_btn.png?v=1518275498000",
+			"type": "image",
+			"name": "star_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/start_btn.png?v=1518275498000",
+			"type": "image",
+			"name": "start_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/watermelon_btn.png?v=1518275498000",
+			"type": "image",
+			"name": "watermelon_btn_png"
+		},
+		{
+			"url": "config/item.json?v=1520590446000",
+			"type": "json",
+			"name": "item_json"
+		},
+		{
+			"url": "assets/gameUI/game/icon/apple.png?v=1518275496000",
+			"type": "image",
+			"name": "apple_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/apple3.png?v=1518275496000",
+			"type": "image",
+			"name": "apple3_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/bar.png?v=1518275496000",
+			"type": "image",
+			"name": "bar_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/bar50.png?v=1518275496000",
+			"type": "image",
+			"name": "bar50_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/bell.png?v=1518275496000",
+			"type": "image",
+			"name": "bell_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/doubleSeven.png?v=1518275496000",
+			"type": "image",
+			"name": "doubleSeven_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/doubleSeven3.png?v=1518275496000",
+			"type": "image",
+			"name": "doubleSeven3_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/lucky_bule.png?v=1518275496000",
+			"type": "image",
+			"name": "lucky_bule_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/lucky_yellow.png?v=1518275496000",
+			"type": "image",
+			"name": "lucky_yellow_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/orange.png?v=1518275496000",
+			"type": "image",
+			"name": "orange_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/orange3.png?v=1518275496000",
+			"type": "image",
+			"name": "orange3_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/pear.png?v=1518275497000",
+			"type": "image",
+			"name": "pear_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/pear3.png?v=1518275497000",
+			"type": "image",
+			"name": "pear3_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/star.png?v=1518275497000",
+			"type": "image",
+			"name": "star_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/star3.png?v=1518275497000",
+			"type": "image",
+			"name": "star3_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/watermelon.png?v=1518275497000",
+			"type": "image",
+			"name": "watermelon_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/watermelon3.png?v=1518275497000",
+			"type": "image",
+			"name": "watermelon3_png"
+		},
+		{
+			"url": "assets/gameUI/big/fontRes.json?v=1517746570000",
+			"type": "sheet",
+			"name": "fontRes_json",
+			"subkeys": "b_0,b_1,b_2,b_3,b_4,b_5,b_6,b_7,b_8,b_9,s_0,s_1,s_2,s_3,s_4,s_5,s_6,s_7,s_8,s_9"
+		},
+		{
+			"url": "assets/gameUI/game/select.png?v=1518275497000",
+			"type": "image",
+			"name": "select_png"
+		},
+		{
+			"url": "assets/gameUI/game/icon/bell3.png?v=1518275496000",
+			"type": "image",
+			"name": "bell3_png"
+		},
+		{
+			"url": "assets/gameUI/game/tishikuang_11.20.png?v=1518275498000",
+			"type": "image",
+			"name": "tishikuang_11.20_png"
+		},
+		{
+			"url": "assets/gameUI/game/home_n1.png?v=1518275496000",
+			"type": "image",
+			"name": "home_n1_png"
+		},
+		{
+			"url": "assets/gameUI/game/home_n2.png?v=1518275496000",
+			"type": "image",
+			"name": "home_n2_png"
+		},
+		{
+			"url": "assets/gameUI/game/deng1_bg.png?v=1518275495000",
+			"type": "image",
+			"name": "deng1_bg_png"
+		},
+		{
+			"url": "assets/gameUI/game/deng2_bg.png?v=1518275495000",
+			"type": "image",
+			"name": "deng2_bg_png"
+		},
+		{
+			"url": "config/luckYellow.json?v=1518401630000",
+			"type": "json",
+			"name": "luckYellow_json"
+		},
+		{
+			"url": "config/luckBule.json?v=1518401630000",
+			"type": "json",
+			"name": "luckBule_json"
+		},
+		{
+			"url": "assets/gameUI/login/logo_1.png?v=1518275499000",
+			"type": "image",
+			"name": "logo_1_png"
+		},
+		{
+			"url": "assets/gameUI/login/logo_2.png?v=1518275499000",
+			"type": "image",
+			"name": "logo_2_png"
+		},
+		{
+			"url": "assets/gameUI/login/logo_3.png?v=1518275499000",
+			"type": "image",
+			"name": "logo_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/light.png?v=1518275497000",
+			"type": "image",
+			"name": "light_png"
+		},
+		{
+			"url": "assets/gameUI/login/logo_0.png?v=1518275499000",
+			"type": "image",
+			"name": "logo_0_png"
+		},
+		{
+			"url": "sound/bg.mp3?v=1510577130000",
+			"type": "sound",
+			"name": "bg_mp3",
+			"soundType": "music"
+		},
+		{
+			"url": "sound/effect_bet_1.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_1_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_2.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_2_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_3.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_3_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_4.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_4_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_5.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_5_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_6.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_6_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_7.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_7_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_8.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_bet_8_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_fail.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_fail_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_lucky_jump.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_lucky_jump_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_lucky.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_lucky_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_menu.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_menu_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_random.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_random_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_round.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_round_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_win.wav?v=1510577130000",
+			"type": "sound",
+			"name": "effect_win_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "config/sys.json?v=1518402837000",
+			"type": "json",
+			"name": "sys_json"
+		},
+		{
+			"url": "assets/gameUI/login/backbtn.png?v=1520221430000",
+			"type": "image",
+			"name": "backbtn_png"
+		},
+		{
+			"url": "assets/gameUI/login/gou1.png?v=1520229126000",
+			"type": "image",
+			"name": "gou1_png"
+		},
+		{
+			"url": "assets/gameUI/login/gou2.png?v=1520234169130",
+			"type": "image",
+			"name": "gou2_png"
+		},
+		{
+			"url": "assets/gameUI/login/getreg.png?v=1520565166000",
+			"type": "image",
+			"name": "getreg_png"
+		},
+		{
+			"url": "assets/gameUI/login/registerbg.png?v=1520221458000",
+			"type": "image",
+			"name": "registerbg_png"
+		},
+		{
+			"url": "assets/gameUI/login/inputBg.png?v=1518275499000",
+			"type": "image",
+			"name": "inputBg_png"
+		},
+		{
+			"url": "assets/gameUI/login/loginbg.png?v=1520562502000",
+			"type": "image",
+			"name": "loginbg_png"
+		},
+		{
+			"url": "assets/gameUI/login/loginregBtn.png?v=1520231408000",
+			"type": "image",
+			"name": "loginregBtn_png"
+		},
+		{
+			"url": "assets/gameUI/game/coin.png?v=1518255168000",
+			"type": "image",
+			"name": "coin_png"
+		},
+		{
+			"url": "assets/gameUI/game/messBtn.png?v=1518275500000",
+			"type": "image",
+			"name": "messBtn_png"
+		},
+		{
+			"url": "assets/gameUI/game/openShop.png?v=1518275500000",
+			"type": "image",
+			"name": "openShop_png"
+		},
+		{
+			"url": "assets/gameUI/game/shareBtn.png?v=1519720314000",
+			"type": "image",
+			"name": "shareBtn_png"
+		},
+		{
+			"url": "assets/gameUI/game/soundBtn.png?v=1518275500000",
+			"type": "image",
+			"name": "soundBtn_png"
+		},
+		{
+			"url": "assets/gameUI/sign/sign_bg.png?v=1518255166000",
+			"type": "image",
+			"name": "sign_bg_png"
+		},
+		{
+			"url": "assets/gameUI/sign/sign_complete.png?v=1518255167000",
+			"type": "image",
+			"name": "sign_complete_png"
+		},
+		{
+			"url": "assets/gameUI/sign/sign_itembg.png?v=1518255166000",
+			"type": "image",
+			"name": "sign_itembg_png"
+		},
+		{
+			"url": "assets/gameUI/icon/money1.png?v=1520301608000",
+			"type": "image",
+			"name": "money1_png"
+		},
+		{
+			"url": "assets/gameUI/icon/money2.png?v=1520301596000",
+			"type": "image",
+			"name": "money2_png"
+		},
+		{
+			"url": "assets/gameUI/icon/money3.png?v=1520301576000",
+			"type": "image",
+			"name": "money3_png"
+		},
+		{
+			"url": "assets/gameUI/icon/money4.png?v=1520301586000",
+			"type": "image",
+			"name": "money4_png"
+		},
+		{
+			"url": "assets/gameUI/icon/money5.png?v=1520301556000",
+			"type": "image",
+			"name": "money5_png"
+		},
+		{
+			"url": "assets/gameUI/icon/money6.png?v=1520301566000",
+			"type": "image",
+			"name": "money6_png"
+		},
+		{
+			"url": "config/sign.json?v=1520303245000",
+			"type": "json",
+			"name": "sign_json"
+		},
+		{
+			"url": "assets/gameUI/game/head.png?v=1519791336000",
+			"type": "image",
+			"name": "head_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/recharge_bg.png?v=1519787654000",
+			"type": "image",
+			"name": "recharge_bg_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/recharge_btn.png?v=1519787516000",
+			"type": "image",
+			"name": "recharge_btn_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/recharge_itembg.png?v=1519787458000",
+			"type": "image",
+			"name": "recharge_itembg_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/recharge_select.png?v=1519788326000",
+			"type": "image",
+			"name": "recharge_select_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/recharge_wh.png?v=1519787334000",
+			"type": "image",
+			"name": "recharge_wh_png"
+		},
+		{
+			"url": "assets/gameUI/game/reward1_bg.png?v=1520307576000",
+			"type": "image",
+			"name": "reward1_bg_png"
+		},
+		{
+			"url": "assets/gameUI/game/reward2_bg.png?v=1520307852000",
+			"type": "image",
+			"name": "reward2_bg_png"
+		},
+		{
+			"url": "assets/gameUI/reward/reward_bg.png?v=1520333332000",
+			"type": "image",
+			"name": "reward_bg_png"
+		},
+		{
+			"url": "assets/gameUI/reward/reward_title.png?v=1520307310000",
+			"type": "image",
+			"name": "reward_title_png"
+		},
+		{
+			"url": "assets/gameUI/reward/rewardcoin.png?v=1520307300000",
+			"type": "image",
+			"name": "rewardcoin_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/recharge.png?v=1520476344000",
+			"type": "image",
+			"name": "recharge_png"
+		},
+		{
+			"url": "assets/gameUI/login/getreg2.png?v=1520565408000",
+			"type": "image",
+			"name": "getreg2_png"
+		},
+		{
+			"url": "assets/game1UI/other/help_bg.png?v=1520581666080",
+			"type": "image",
+			"name": "help_bg_png"
+		},
+		{
+			"url": "assets/game1UI/other/share_bg.png?v=1520589348000",
+			"type": "image",
+			"name": "share_bg_png"
+		},
+		{
+			"url": "assets/gameUI/other/closeBtn.png?v=1517327354000",
+			"type": "image",
+			"name": "closeBtn_png"
+		},
+		{
+			"url": "assets/game1UI/other/input_bg.png?v=1520567120000",
+			"type": "image",
+			"name": "input_bg_png"
+		},
+		{
+			"url": "assets/gameUI/other/close_bg.png?v=1520572865291",
+			"type": "image",
+			"name": "close_bg_png"
+		},
+		{
+			"url": "assets/gameUI/other/left_pag_btn.png?v=1520573850759",
+			"type": "image",
+			"name": "left_pag_btn_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/his_get1.png?v=1520575192000",
+			"type": "image",
+			"name": "his_get1_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/his_get2.png?v=1520575208000",
+			"type": "image",
+			"name": "his_get2_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/his_rec1.png?v=1520575218000",
+			"type": "image",
+			"name": "his_rec1_png"
+		},
+		{
+			"url": "assets/gameUI/recharge/his_rec2.png?v=1520575172000",
+			"type": "image",
+			"name": "his_rec2_png"
+		},
+		{
+			"url": "config/item1.json?v=1520819153000",
+			"type": "json",
+			"name": "item1_json"
+		},
+		{
+			"url": "config/buttonList.json?v=1520818924000",
+			"type": "json",
+			"name": "buttonList_json"
+		},
+		{
+			"url": "assets/gameUI/game/timeReward1.png?v=1520307576000",
+			"type": "image",
+			"name": "timeReward1_png"
+		},
+		{
+			"url": "assets/gameUI/game/timeReward2.png?v=1520307852000",
+			"type": "image",
+			"name": "timeReward2_png"
+		}
+	]
+}

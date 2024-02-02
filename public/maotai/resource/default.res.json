@@ -1,0 +1,755 @@
+{
+	"groups": [
+		{
+			"keys": "egret_icon_png,description_json,jindutiao_png,jindutiaodiban_png,bg_png,black1_png,bg_mp3,wind_png,logo_png,pen_png,click_wav",
+			"name": "preload"
+		},
+		{
+			"keys": "loginBtn_png,bg_title_png",
+			"name": "game"
+		},
+		{
+			"keys": "selected_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,bg_down_png,com_btn_png,go_btn_png,save_btn_png,share_btn_png,sw_btn_png,index_png,index2_png,index3_png,beige_btn_png,bg_red_png,blue_btn_png,brown_btn_png,green_btn_png,light_btn_png,red_btn_png,select_bg_png,white_btn_png,yellow_btn_png,1s_png,2s_png,3s_png,4s_png,5s_png,6s_png,7s_png,2b_png,3b_png,4b_png,5b_png,6b_png,7b_png,1b_png,left_btn_png,moren_png,bg_2_png,cloud_2_png,dragon_2_png,tou_2_png,zhua_2_png,zs_2_png,bg_8_png,cloud_8_png,dragon_8_png,tou_8_png,zhua_8_png,zs_8_png, bg_5_png,cloud_5_png,dragon_5_png,tou_5_png,zhua_5_png,zs_5_png,bg_3_png,cloud_3_png,dragon_3_png,tou_3_png,zhua_3_png,zs_3_png,bg_4_png,cloud_4_png,tou_4_png,zhua_4_png,zs_4_png,bg_6_png,cloud_6_png,dragon_6_png,tou_6_png,zhua_6_png,zs_6_png,bg_7_png,cloud_7_png,dragon_7_png,tou_7_png,zhua_7_png,zs_7_png,cloud_1_png,dragon_1_png,tou_1_png,zhua_1_png,zs_1_png,dragon_4_png,bg_1_png",
+			"name": "scene"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/gameUI/loading/jindutiao.png",
+			"type": "image",
+			"name": "jindutiao_png"
+		},
+		{
+			"url": "assets/gameUI/loading/jindutiaodiban.png",
+			"type": "image",
+			"name": "jindutiaodiban_png"
+		},
+		{
+			"url": "assets/gameUI/login/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "assets/gameUI/login/loginBtn.png",
+			"type": "image",
+			"name": "loginBtn_png"
+		},
+		{
+			"url": "assets/gameUI/black1.png",
+			"type": "image",
+			"name": "black1_png"
+		},
+		{
+			"url": "assets/gameUI/big/fontRes.json",
+			"type": "sheet",
+			"name": "fontRes_json",
+			"subkeys": "b_0,b_1,b_2,b_3,b_4,b_5,b_6,b_7,b_8,b_9,s_0,s_1,s_2,s_3,s_4,s_5,s_6,s_7,s_8,s_9"
+		},
+		{
+			"url": "sound/bg.mp3",
+			"type": "sound",
+			"name": "bg_mp3",
+			"soundType": "music"
+		},
+		{
+			"url": "sound/effect_bet_1.wav",
+			"type": "sound",
+			"name": "effect_bet_1_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_2.wav",
+			"type": "sound",
+			"name": "effect_bet_2_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_3.wav",
+			"type": "sound",
+			"name": "effect_bet_3_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_4.wav",
+			"type": "sound",
+			"name": "effect_bet_4_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_5.wav",
+			"type": "sound",
+			"name": "effect_bet_5_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_6.wav",
+			"type": "sound",
+			"name": "effect_bet_6_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_7.wav",
+			"type": "sound",
+			"name": "effect_bet_7_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_bet_8.wav",
+			"type": "sound",
+			"name": "effect_bet_8_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_fail.wav",
+			"type": "sound",
+			"name": "effect_fail_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_lucky_jump.wav",
+			"type": "sound",
+			"name": "effect_lucky_jump_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_lucky.wav",
+			"type": "sound",
+			"name": "effect_lucky_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_menu.wav",
+			"type": "sound",
+			"name": "effect_menu_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_random.wav",
+			"type": "sound",
+			"name": "effect_random_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_round.wav",
+			"type": "sound",
+			"name": "effect_round_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "sound/effect_win.wav",
+			"type": "sound",
+			"name": "effect_win_wav",
+			"soundType": "effect"
+		},
+		{
+			"url": "db/armature/body_tex.png",
+			"type": "image",
+			"name": "body_tex_png"
+		},
+		{
+			"url": "db/armature/body_tex.json",
+			"type": "json",
+			"name": "body_tex_json"
+		},
+		{
+			"url": "db/armature/body_ske.json",
+			"type": "json",
+			"name": "body_ske_json"
+		},
+		{
+			"url": "db/test/movie_tex.png",
+			"type": "image",
+			"name": "movie_tex_png"
+		},
+		{
+			"url": "db/test/movie_ske.json",
+			"type": "json",
+			"name": "movie_ske_json"
+		},
+		{
+			"url": "db/test/movie_tex.json",
+			"type": "json",
+			"name": "movie_tex_json"
+		},
+		{
+			"url": "config/AllProtobuf.proto",
+			"type": "text",
+			"name": "AllProtobuf_proto"
+		},
+		{
+			"url": "config/protobuf.json",
+			"type": "json",
+			"name": "protobuf_json"
+		},
+		{
+			"url": "assets/gameUI/login/bg_title.png",
+			"type": "image",
+			"name": "bg_title_png"
+		},
+		{
+			"url": "assets/wine.png",
+			"type": "image",
+			"name": "wine_png"
+		},
+		{
+			"url": "assets/gameUI/login/wind.png",
+			"type": "image",
+			"name": "wind_png"
+		},
+		{
+			"url": "assets/gameUI/login/logo.png",
+			"type": "image",
+			"name": "logo_png"
+		},
+		{
+			"url": "assets/gameUI/login/pen.png",
+			"type": "image",
+			"name": "pen_png"
+		},
+		{
+			"url": "assets/gameUI/game/bg_down.png",
+			"type": "image",
+			"name": "bg_down_png"
+		},
+		{
+			"url": "assets/gameUI/game/btn/com_btn.png",
+			"type": "image",
+			"name": "com_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/btn/go_btn.png",
+			"type": "image",
+			"name": "go_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/btn/save_btn.png",
+			"type": "image",
+			"name": "save_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/btn/share_btn.png",
+			"type": "image",
+			"name": "share_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/btn/sw_btn.png",
+			"type": "image",
+			"name": "sw_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/index.png",
+			"type": "image",
+			"name": "index_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/index2.png",
+			"type": "image",
+			"name": "index2_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/index3.png",
+			"type": "image",
+			"name": "index3_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/beige_btn.png",
+			"type": "image",
+			"name": "beige_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/bg_red.png",
+			"type": "image",
+			"name": "bg_red_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/blue_btn.png",
+			"type": "image",
+			"name": "blue_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/brown_btn.png",
+			"type": "image",
+			"name": "brown_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/green_btn.png",
+			"type": "image",
+			"name": "green_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/light_btn.png",
+			"type": "image",
+			"name": "light_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/red_btn.png",
+			"type": "image",
+			"name": "red_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/select_bg.png",
+			"type": "image",
+			"name": "select_bg_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/white_btn.png",
+			"type": "image",
+			"name": "white_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/select/yellow_btn.png",
+			"type": "image",
+			"name": "yellow_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/1s.png",
+			"type": "image",
+			"name": "1s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/2s.png",
+			"type": "image",
+			"name": "2s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/3s.png",
+			"type": "image",
+			"name": "3s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/4s.png",
+			"type": "image",
+			"name": "4s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/5s.png",
+			"type": "image",
+			"name": "5s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/6s.png",
+			"type": "image",
+			"name": "6s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title1/7s.png",
+			"type": "image",
+			"name": "7s_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/2b.png",
+			"type": "image",
+			"name": "2b_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/3b.png",
+			"type": "image",
+			"name": "3b_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/4b.png",
+			"type": "image",
+			"name": "4b_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/5b.png",
+			"type": "image",
+			"name": "5b_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/6b.png",
+			"type": "image",
+			"name": "6b_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/7b.png",
+			"type": "image",
+			"name": "7b_png"
+		},
+		{
+			"url": "assets/gameUI/game/title2/1b.png",
+			"type": "image",
+			"name": "1b_png"
+		},
+		{
+			"url": "assets/gameUI/game/btn/left_btn.png",
+			"type": "image",
+			"name": "left_btn_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/moren.png",
+			"type": "image",
+			"name": "moren_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/blue/bg_2.png",
+			"type": "image",
+			"name": "bg_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/blue/cloud_2.png",
+			"type": "image",
+			"name": "cloud_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/blue/dragon_2.png",
+			"type": "image",
+			"name": "dragon_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/blue/tou_2.png",
+			"type": "image",
+			"name": "tou_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/blue/zhua_2.png",
+			"type": "image",
+			"name": "zhua_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/blue/zs_2.png",
+			"type": "image",
+			"name": "zs_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/beige/bg_8.png",
+			"type": "image",
+			"name": "bg_8_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/beige/cloud_8.png",
+			"type": "image",
+			"name": "cloud_8_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/beige/dragon_8.png",
+			"type": "image",
+			"name": "dragon_8_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/beige/tou_8.png",
+			"type": "image",
+			"name": "tou_8_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/beige/zhua_8.png",
+			"type": "image",
+			"name": "zhua_8_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/beige/zs_8.png",
+			"type": "image",
+			"name": "zs_8_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/ bg_5.png",
+			"type": "image",
+			"name": " bg_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/cloud_5.png",
+			"type": "image",
+			"name": "cloud_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/dragon_5.png",
+			"type": "image",
+			"name": "dragon_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/tou_5.png",
+			"type": "image",
+			"name": "tou_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/zhua_5.png",
+			"type": "image",
+			"name": "zhua_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/brown/zs_5.png",
+			"type": "image",
+			"name": "zs_5_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/lightBlue/bg_3.png",
+			"type": "image",
+			"name": "bg_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/lightBlue/cloud_3.png",
+			"type": "image",
+			"name": "cloud_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/lightBlue/dragon_3.png",
+			"type": "image",
+			"name": "dragon_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/lightBlue/tou_3.png",
+			"type": "image",
+			"name": "tou_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/lightBlue/zhua_3.png",
+			"type": "image",
+			"name": "zhua_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/lightBlue/zs_3.png",
+			"type": "image",
+			"name": "zs_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/green/bg_4.png",
+			"type": "image",
+			"name": "bg_4_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/green/cloud_4.png",
+			"type": "image",
+			"name": "cloud_4_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/green/tou_4.png",
+			"type": "image",
+			"name": "tou_4_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/green/zhua_4.png",
+			"type": "image",
+			"name": "zhua_4_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/green/zs_4.png",
+			"type": "image",
+			"name": "zs_4_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/red/bg_6.png",
+			"type": "image",
+			"name": "bg_6_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/red/cloud_6.png",
+			"type": "image",
+			"name": "cloud_6_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/red/dragon_6.png",
+			"type": "image",
+			"name": "dragon_6_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/red/tou_6.png",
+			"type": "image",
+			"name": "tou_6_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/red/zhua_6.png",
+			"type": "image",
+			"name": "zhua_6_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/red/zs_6.png",
+			"type": "image",
+			"name": "zs_6_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/white/bg_7.png",
+			"type": "image",
+			"name": "bg_7_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/white/cloud_7.png",
+			"type": "image",
+			"name": "cloud_7_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/white/dragon_7.png",
+			"type": "image",
+			"name": "dragon_7_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/white/tou_7.png",
+			"type": "image",
+			"name": "tou_7_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/white/zhua_7.png",
+			"type": "image",
+			"name": "zhua_7_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/white/zs_7.png",
+			"type": "image",
+			"name": "zs_7_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/yellow/cloud_1.png",
+			"type": "image",
+			"name": "cloud_1_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/yellow/dragon_1.png",
+			"type": "image",
+			"name": "dragon_1_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/yellow/tou_1.png",
+			"type": "image",
+			"name": "tou_1_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/yellow/zhua_1.png",
+			"type": "image",
+			"name": "zhua_1_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/yellow/zs_1.png",
+			"type": "image",
+			"name": "zs_1_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/green/dragon_4.png",
+			"type": "image",
+			"name": "dragon_4_png"
+		},
+		{
+			"url": "assets/gameUI/game/dragon/yellow/bg_1.png",
+			"type": "image",
+			"name": "bg_1_png"
+		},
+		{
+			"url": "sound/click.wav",
+			"type": "sound",
+			"name": "click_wav"
+		}
+	]
+}

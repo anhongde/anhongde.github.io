@@ -1,0 +1,23 @@
+{
+  "1669": {
+    "id": 2,
+    "responseId": 1669,
+    "front_service": "auth",
+    "service": "auth",
+    "method": "login",
+    "args": "userId,token",
+    "front_method": "login",
+    "front_protobuf": "LoginS2CProto",
+    "back_protobuf": "com.skylinematrix.crazyFarm.backend.vo.s2c.LoginS2C"
+  },
+  "7000": {
+    "id": 4,
+    "responseId": 7000,
+    "front_service": "game",
+	"service": "game",
+	"method": "heart",
+    "front_method": "heart",
+    "front_protobuf": "HeartS2CProto",
+    "back_protobuf": "com.zhongan.game.proto.HeartS2C"
+  }
+}
