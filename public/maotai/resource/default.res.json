@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "egret_icon_png,description_json,jindutiao_png,jindutiaodiban_png,bg_png,black1_png,bg_mp3,wind_png,logo_png,pen_png,click_wav",
+			"keys": "description_json,bg_png,black1_png,bg_mp3,logo_png,pen_png,click_wav,loading_png,loading_json,wine_png",
 			"name": "preload"
 		},
 		{
@@ -9,7 +9,7 @@
 			"name": "game"
 		},
 		{
-			"keys": "selected_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,bg_down_png,com_btn_png,go_btn_png,save_btn_png,share_btn_png,sw_btn_png,index_png,index2_png,index3_png,beige_btn_png,bg_red_png,blue_btn_png,brown_btn_png,green_btn_png,light_btn_png,red_btn_png,select_bg_png,white_btn_png,yellow_btn_png,1s_png,2s_png,3s_png,4s_png,5s_png,6s_png,7s_png,2b_png,3b_png,4b_png,5b_png,6b_png,7b_png,1b_png,left_btn_png,moren_png,bg_2_png,cloud_2_png,dragon_2_png,tou_2_png,zhua_2_png,zs_2_png,bg_8_png,cloud_8_png,dragon_8_png,tou_8_png,zhua_8_png,zs_8_png,cloud_5_png,dragon_5_png,tou_5_png,zhua_5_png,zs_5_png,bg_3_png,cloud_3_png,dragon_3_png,tou_3_png,zhua_3_png,zs_3_png,bg_4_png,cloud_4_png,tou_4_png,zhua_4_png,zs_4_png,bg_6_png,cloud_6_png,dragon_6_png,tou_6_png,zhua_6_png,zs_6_png,bg_7_png,cloud_7_png,dragon_7_png,tou_7_png,zhua_7_png,zs_7_png,cloud_1_png,dragon_1_png,tou_1_png,zhua_1_png,zs_1_png,dragon_4_png,bg_1_png,bg_5_png,bg_0_png,cloud_0_png,dragon_0_png,tou_0_png,zhua_0_png,zs_0_png,ma_png",
+			"keys": "selected_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,bg_down_png,com_btn_png,go_btn_png,save_btn_png,share_btn_png,sw_btn_png,beige_btn_png,bg_red_png,blue_btn_png,brown_btn_png,green_btn_png,light_btn_png,red_btn_png,select_bg_png,white_btn_png,yellow_btn_png,1s_png,2s_png,3s_png,4s_png,5s_png,6s_png,7s_png,2b_png,3b_png,4b_png,5b_png,6b_png,7b_png,1b_png,left_btn_png,moren_png,bg_2_png,cloud_2_png,dragon_2_png,tou_2_png,zhua_2_png,zs_2_png,bg_8_png,cloud_8_png,dragon_8_png,tou_8_png,zhua_8_png,zs_8_png,cloud_5_png,dragon_5_png,tou_5_png,zhua_5_png,zs_5_png,bg_3_png,cloud_3_png,dragon_3_png,tou_3_png,zhua_3_png,zs_3_png,bg_4_png,cloud_4_png,tou_4_png,zhua_4_png,zs_4_png,bg_6_png,cloud_6_png,dragon_6_png,tou_6_png,zhua_6_png,zs_6_png,bg_7_png,cloud_7_png,dragon_7_png,tou_7_png,zhua_7_png,zs_7_png,cloud_1_png,dragon_1_png,tou_1_png,zhua_1_png,zs_1_png,dragon_4_png,bg_1_png,bg_5_png,bg_0_png,cloud_0_png,dragon_0_png,tou_0_png,zhua_0_png,zs_0_png,ma_png,gai_png,name_png,guide_1_png,guide_2_png,guide_3_png,hand_png,skip_btn_png",
 			"name": "scene"
 		}
 	],
@@ -130,24 +130,9 @@
 			"name": "track_sb_png"
 		},
 		{
-			"url": "assets/egret_icon.png",
-			"type": "image",
-			"name": "egret_icon_png"
-		},
-		{
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "assets/gameUI/loading/jindutiao.png",
-			"type": "image",
-			"name": "jindutiao_png"
-		},
-		{
-			"url": "assets/gameUI/loading/jindutiaodiban.png",
-			"type": "image",
-			"name": "jindutiaodiban_png"
 		},
 		{
 			"url": "assets/gameUI/login/bg.png",
@@ -222,16 +207,6 @@
 			"name": "bg_title_png"
 		},
 		{
-			"url": "assets/wine.png",
-			"type": "image",
-			"name": "wine_png"
-		},
-		{
-			"url": "assets/gameUI/login/wind.png",
-			"type": "image",
-			"name": "wind_png"
-		},
-		{
 			"url": "assets/gameUI/login/logo.png",
 			"type": "image",
 			"name": "logo_png"
@@ -270,21 +245,6 @@
 			"url": "assets/gameUI/game/btn/sw_btn.png",
 			"type": "image",
 			"name": "sw_btn_png"
-		},
-		{
-			"url": "assets/gameUI/game/guide/index.png",
-			"type": "image",
-			"name": "index_png"
-		},
-		{
-			"url": "assets/gameUI/game/guide/index2.png",
-			"type": "image",
-			"name": "index2_png"
-		},
-		{
-			"url": "assets/gameUI/game/guide/index3.png",
-			"type": "image",
-			"name": "index3_png"
 		},
 		{
 			"url": "assets/gameUI/game/select/beige_btn.png",
@@ -695,6 +655,56 @@
 			"url": "assets/gameUI/game/ma.png",
 			"type": "image",
 			"name": "ma_png"
+		},
+		{
+			"url": "assets/gameUI/game/gai.png",
+			"type": "image",
+			"name": "gai_png"
+		},
+		{
+			"url": "assets/gameUI/game/name.png",
+			"type": "image",
+			"name": "name_png"
+		},
+		{
+			"url": "assets/gameUI/loading/loading.png",
+			"type": "image",
+			"name": "loading_png"
+		},
+		{
+			"url": "assets/gameUI/loading/loading.json",
+			"type": "json",
+			"name": "loading_json"
+		},
+		{
+			"url": "assets/gameUI/game/guide/guide_1.png",
+			"type": "image",
+			"name": "guide_1_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/guide_2.png",
+			"type": "image",
+			"name": "guide_2_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/guide_3.png",
+			"type": "image",
+			"name": "guide_3_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/hand.png",
+			"type": "image",
+			"name": "hand_png"
+		},
+		{
+			"url": "assets/gameUI/game/guide/skip_btn.png",
+			"type": "image",
+			"name": "skip_btn_png"
+		},
+		{
+			"url": "assets/gameUI/login/wine.png",
+			"type": "image",
+			"name": "wine_png"
 		}
 	]
 }
